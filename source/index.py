@@ -8,6 +8,7 @@ from utils.changelog import changelog
 from utils.gitignore import gitignore
 from utils.docker import docker
 from utils.heroku import heroku
+from utils.nodemon import nodemon
 
 if __name__ == '__main__':
     project_name = input('Project name: ').lower()
@@ -28,6 +29,7 @@ if __name__ == '__main__':
     changelog(project_name, project_version)
     gitignore()
     tsconfig()
+    nodemon()
     prettier()
     eslint()
     webpack()
