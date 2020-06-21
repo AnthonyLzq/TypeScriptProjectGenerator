@@ -1,0 +1,17 @@
+
+{
+  "name": "test",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build:dev": "webpack --watch --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint src/* --ext .ts",
+    "service": "nodemon",
+    "start": "node dist/index.js"
+  },
+  "author": "test <test@test.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
