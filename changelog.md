@@ -20,3 +20,8 @@
   - `eslint-plugin-sort-keys-fix` package to automatically sort the keys of an object.
 - Updated:
   - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+
+## Version 0.2.1
+
+- Fixed:
+  - `Webpack` config for `__dirname` according with this [`documentation`](https://codeburst.io/use-webpack-with-dirname-correctly-4cad3b265a92).

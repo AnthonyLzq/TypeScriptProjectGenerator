@@ -17,6 +17,9 @@ module.exports = {
       }
     ]
   },
+  node: {
+    __dirname: false
+  },
   resolve: {
     extensions: ['.ts', '.js']
   },
