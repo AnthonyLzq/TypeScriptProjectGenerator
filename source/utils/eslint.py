@@ -25,7 +25,7 @@ module.exports = \u007b
     project    : './tsconfig.json',
     sourceType : 'module'
   \u007d,
-  plugins: ['@typescript-eslint', 'typescript-sort-keys'],
+  plugins: ['@typescript-eslint', 'typescript-sort-keys', 'sort-keys-fix'],
   rules  : \u007b
     '@typescript-eslint/camelcase'        : 'off',
     '@typescript-eslint/naming-convention': [
@@ -66,6 +66,7 @@ module.exports = \u007b
     ],
     'import/prefer-default-export': 'off',
     'key-spacing'                 : [2, \u007b align: 'colon' \u007d],
+    'keyword-spacing'             : ['error', \u007b after: true, before: true \u007d],
     'lines-between-class-members' : [
       "error",
       "always",
@@ -73,7 +74,7 @@ module.exports = \u007b
         exceptAfterSingleLine: true
       \u007d
     ],
-    'max-len'                     : [
+    'max-len': [
       'error',
       \u007b
         code                  : 80,
@@ -91,10 +92,19 @@ module.exports = \u007b
     'no-param-reassign'          : 'off',
     'no-plusplus'                : 'off',
     'no-trailing-spaces'         : 'error',
+    'no-underscore-dangle'       : [
+      'error',
+      \u007b
+        'allowAfterThis'      : true,
+        'enforceInMethodNames': false 
+      \u007d
+    ],
     'object-curly-spacing'       : ['error', 'always'],
     'prefer-const'               : 'error',
     radix                        : ['error', 'as-needed'],
     semi                         : [2, 'never'],
+    'sort-keys'                  : 'error',
+    'sort-keys-fix/sort-keys-fix': 'warn',
     'space-before-function-paren': [
       'error',
       \u007b

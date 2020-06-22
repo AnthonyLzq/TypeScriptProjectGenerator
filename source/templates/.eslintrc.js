@@ -58,6 +58,7 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'key-spacing'                 : [2, { align: 'colon' }],
+    'keyword-spacing'             : ['error', { after: true, before: true }],
     'lines-between-class-members' : [
       "error",
       "always",
@@ -65,7 +66,7 @@ module.exports = {
         exceptAfterSingleLine: true
       }
     ],
-    'max-len'                     : [
+    'max-len': [
       'error',
       {
         code                  : 80,
@@ -83,10 +84,18 @@ module.exports = {
     'no-param-reassign'          : 'off',
     'no-plusplus'                : 'off',
     'no-trailing-spaces'         : 'error',
+    'no-underscore-dangle'       : [
+      'error',
+      {
+        'allowAfterThis'      : true,
+        'enforceInMethodNames': false 
+      }
+    ],
     'object-curly-spacing'       : ['error', 'always'],
     'prefer-const'               : 'error',
     radix                        : ['error', 'as-needed'],
     semi                         : [2, 'never'],
+    'sort-keys'                  : 'error',
     'space-before-function-paren': [
       'error',
       {

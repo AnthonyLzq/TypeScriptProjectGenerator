@@ -13,3 +13,10 @@
 
 - Fixed:
   - `nodemon.json` file is now been added once the script is executed.
+
+## Version 0.2.0
+
+- Implemented:
+  - `eslint-plugin-sort-keys-fix` package to automatically sort the keys of an object.
+- Updated:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).

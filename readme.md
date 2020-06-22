@@ -48,6 +48,7 @@ Here is the list of the packages that are been installed:
 - [`eslint-config-prettier`](https://www.npmjs.com/package/eslint-config-prettier)
 - [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import)
 - [`eslint-plugin-prettier`](https://www.npmjs.com/package/eslint-plugin-prettier)
+- [`https://github.com/AnthonyLzq/typescript-project-generator#readme`](https://www.npmjs.com/package/eslint-plugin-sort-keys-fix)
 - [`eslint-plugin-typescript-sort-keys`](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys)
 - [`nodemon`](https://www.npmjs.com/package/nodemon)
 - [`prettier`](https://www.npmjs.com/package/prettier)

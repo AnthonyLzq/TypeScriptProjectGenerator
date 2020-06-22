@@ -21,6 +21,7 @@ yarn add -D \
   eslint-config-prettier \
   eslint-plugin-import \
   eslint-plugin-prettier \
+  eslint-plugin-sort-keys-fix \
   eslint-plugin-typescript-sort-keys \
   nodemon \
   prettier \
