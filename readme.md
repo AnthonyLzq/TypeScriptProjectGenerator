@@ -19,20 +19,12 @@ Additionally, a `src` folder will be created with an `ìndex.ts` file in it.
 
 Finally, `git` will be initialized and a list of libraries will be installed. Check the [**notes**](#notes).
 
-## Prerequisites
-
-Once you have cloned this project, please run the following command in your terminal:
-
-```console
-$ chmod u+x ts.config.sh
-```
-
 ## Usage
 
 You only need to run the following command to create the setup:
 
 ```console
-$ ./ts.config.sh
+$ sh -c "$(curl -s https://typescript-proyect-generator.vercel.app)"
 ```
 
 ## <a name="notes"></a>Notes
