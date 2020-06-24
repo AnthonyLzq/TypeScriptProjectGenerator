@@ -1,0 +1,30 @@
+{
+  "name": "ts-initial-config",
+  "version": "1.0.0",
+  "description": "A TypeScript initial configuration for web projects",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mkdir test && cd test && node ../bin/index.js"
+  },
+  "bin": {
+    "tpg": "./bin/index.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyLzq/typescript-project-generator.git"
+  },
+  "keywords": [
+    "TypeScript"
+  ],
+  "author": "AnthonyLzq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnthonyLzq/typescript-project-generator/issues"
+  },
+  "homepage": "https://github.com/AnthonyLzq/typescript-project-generator#readme"
+}

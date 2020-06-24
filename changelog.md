@@ -25,3 +25,8 @@
 
 - Fixed:
   - `Webpack` config for `__dirname` according with this [`documentation`](https://codeburst.io/use-webpack-with-dirname-correctly-4cad3b265a92).
+
+## Version 1.0.0
+
+- Reworked:
+  - All the process now is done using `Node.js` instead of `Python`.

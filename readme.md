@@ -21,19 +21,9 @@ Finally, `git` will be initialized and a list of libraries will be installed. Ch
 
 ## Prerequisites
 
-Once you have cloned this project, please run the following command in your terminal:
-
-```console
-$ chmod u+x ts.config.sh
-```
+## Installation
 
 ## Usage
-
-You only need to run the following command to create the setup:
-
-```console
-$ ./ts.config.sh
-```
 
 ## <a name="notes"></a>Notes
 
@@ -48,7 +38,7 @@ Here is the list of the packages that are been installed:
 - [`eslint-config-prettier`](https://www.npmjs.com/package/eslint-config-prettier)
 - [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import)
 - [`eslint-plugin-prettier`](https://www.npmjs.com/package/eslint-plugin-prettier)
-- [`https://github.com/AnthonyLzq/typescript-project-generator#readme`](https://www.npmjs.com/package/eslint-plugin-sort-keys-fix)
+- [`eslint-plugin-sort-keys-fix`](https://www.npmjs.com/package/eslint-plugin-sort-keys-fix)
 - [`eslint-plugin-typescript-sort-keys`](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys)
 - [`nodemon`](https://www.npmjs.com/package/nodemon)
 - [`prettier`](https://www.npmjs.com/package/prettier)
@@ -62,10 +52,6 @@ Here is the list of the packages that are been installed:
 Finally, check the structure generated once you run the command on the `source/templates` folder.
 
 Feel free to contribute to this project. Every contribution will be appreciated.
-
-### Why Python?
-
-This is something related to my personal preferences. It found kind of hard receive parameters by console using [`Node.js`](https://nodejs.org/en/). In the order hand, using [`Python`](https://www.python.org/) to get information from the console is easier, so...
 
 ## Author
 -   **Anthony Luzquiños** - _Initial Work_ - _Documentation_ - [AnthonyLzq](https://github.com/AnthonyLzq).
