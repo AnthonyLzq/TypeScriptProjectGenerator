@@ -35,3 +35,12 @@
 
 - Updated:
   - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+
+## Version 1.1.1
+
+- Fixed:
+  - `bin/index.js` file, there was missing the following: 
+    ```node
+    #!/usr/bin/env node
+    ```
+    in the first line.
