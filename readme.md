@@ -19,11 +19,26 @@ Additionally, a `src` folder will be created with an `ìndex.ts` file in it.
 
 Finally, `git` will be initialized and a list of libraries will be installed. Check the [**notes**](#notes).
 
-## Prerequisites
 
 ## Installation
 
+This project was intended to be installed globally, **not locally**, and also to initialize projects, be aware of that, you may broke something in your current working directory.
+
+In order to install this package, run the following command in your terminal:
+
+```console
+npm i -g typescript-project-generator
+```
+
 ## Usage
+
+Once you have installed the package, please run the following command in your terminal:
+
+```console
+tpg
+```
+
+This will create a replica of the content of the [`lib/templates`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates) folder.
 
 ## <a name="notes"></a>Notes
 
@@ -52,6 +67,10 @@ Here is the list of the packages that are been installed:
 Finally, check the structure generated once you run the command on the `source/templates` folder.
 
 Feel free to contribute to this project. Every contribution will be appreciated.
+
+### Why is there a .sh file?
+
+For those who wouldn't like to install a package globally, I'm trying to create a `.sh` file that could be executed directly from your terminal by using `curl` to the GitHub repository. There is nothing bad there, check it out if want.
 
 ## Author
 -   **Anthony Luzquiños** - _Initial Work_ - _Documentation_ - [AnthonyLzq](https://github.com/AnthonyLzq).

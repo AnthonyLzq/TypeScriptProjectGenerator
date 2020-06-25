@@ -30,3 +30,8 @@
 
 - Reworked:
   - All the process now is done using `Node.js` instead of `Python`.
+
+## Version 1.1.0
+
+- Updated:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
