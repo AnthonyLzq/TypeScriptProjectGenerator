@@ -42,7 +42,7 @@ This will create a replica of the content of the [`lib/templates`](https://githu
 
 ## <a name="notes"></a>Notes
 
-Here is the list of the packages that are been installed:
+Here is the list of the packages that are being installed:
 
 - [`@types/node`](https://www.npmjs.com/package/@types/node)
 - [`@typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
@@ -63,8 +63,6 @@ Here is the list of the packages that are been installed:
 - [`webpack`](https://www.npmjs.com/package/webpack)
 - [`webpack-cli`](https://www.npmjs.com/package/webpack-cli)
 - [`webpack-node-externals`](https://www.npmjs.com/package/webpack-node-externals)
-
-Finally, check the structure generated once you run the command on the `source/templates` folder.
 
 Feel free to contribute to this project. Every contribution will be appreciated.
 

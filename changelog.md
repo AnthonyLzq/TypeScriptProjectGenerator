@@ -53,3 +53,8 @@
   - Some code refactorization.
 - Updated:
   - `.gitignore` file.
+
+## Version 1.2.1
+
+- Fixed:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
