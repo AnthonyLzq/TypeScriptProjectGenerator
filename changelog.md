@@ -44,3 +44,12 @@
     #!/usr/bin/env node
     ```
     in the first line.
+
+## Version 1.2.0
+
+- Implemented:
+  - `eol-last` eslint rule, to add an empty line a the end of a file.
+  - `description` for the project.
+  - Some code refactorization.
+- Updated:
+  - `.gitignore` file.
