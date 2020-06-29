@@ -66,9 +66,5 @@ Here is the list of the packages that are being installed:
 
 Feel free to contribute to this project. Every contribution will be appreciated.
 
-### Why is there a .sh file?
-
-For those who wouldn't like to install a package globally, I'm trying to create a `.sh` file that could be executed directly from your terminal by using `curl` to the GitHub repository. There is nothing bad there, check it out if want.
-
 ## Author
 -   **Anthony Luzquiños** - _Initial Work_ - _Documentation_ - [AnthonyLzq](https://github.com/AnthonyLzq).

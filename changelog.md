@@ -29,7 +29,7 @@
 ## Version 1.0.0
 
 - Reworked:
-  - All the process now is done using `Node.js` instead of `Python`.
+  - All the process now is done using `Node.js` (with [`readline-sync`](https://www.npmjs.com/package/readline-sync)) instead of `Python`.
 
 ## Version 1.1.0
 
@@ -57,4 +57,12 @@
 ## Version 1.2.1
 
 - Fixed:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+
+## Version 1.3.0
+
+- Implemented:
+  - [`readline-sync`](https://www.npmjs.com/package/readline-sync) native methods in order to have cleaner code.
+- Updated:
+  - `.gitignore` file, using [this](https://www.toptal.com/developers/gitignore/api/node,yarn).
   - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
