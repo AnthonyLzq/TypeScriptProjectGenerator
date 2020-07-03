@@ -1,9 +1,17 @@
 # TypeScript project generator
 
+## Version 1.5.0
+- Implemented:
+  - Request in [`#2`](https://github.com/AnthonyLzq/typescript-project-generator/issues/2).
+  - Prompt messages when the user made a mistake.
+- Updated:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+  - [package.json](https://github.com/AnthonyLzq/typescript-project-generator/blob/master/package.json).
+
 ## Version 1.4.0
 - Implemented:
   - `LICENSE` generator using a query to this [page](https://choosealicense.com/licenses/).
-  - [`underscore`](https://www.npmjs.com/package/underscore) to clean the HTML gotten in the query-
+  - [`underscore`](https://www.npmjs.com/package/underscore) to clean the HTML gotten in the query.
   - `LICENSE` file, both in the current project and in the `templates` folder.
 - Updated:
   - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).

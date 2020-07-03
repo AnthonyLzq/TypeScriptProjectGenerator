@@ -17,6 +17,18 @@ This project has the goal to create a basic setup for a TypeScript project. It w
 - `tsconfig.json`
 - `webpack.config.js`
 
+The following questions will be asked to the user:
+  - `Yarn or npm?`, only one of them is valid.
+  - `Project name:`, at least one character must be provided.
+  - `Project description:`, at least one character must be provided.
+  - `Author:`, at least one character must be provided.
+  - `Email:`, a correct email address must be provided.
+  - `Project version (0.1.0):` the initial version of the project, `0.1.0` as default.
+  - `Select your license [1...7]:`, the license you have chosen for the project.
+  - `License year (current year):`, the year where your license starts, current year as default.
+  - `Will this project be deployed with Heroku? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
+  - `Main file (src/index.ts):`, where is your main file located, `src/index.ts` as default. Notice that even if you change the location, only the `package.json` will be affected.
+
 Additionally, a `src` folder will be created with an `ìndex.ts` file in it.
 
 Finally, `git` will be initialized and a list of libraries will be installed. Check the [**notes**](#notes).
