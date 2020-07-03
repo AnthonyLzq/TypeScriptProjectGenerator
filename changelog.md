@@ -1,5 +1,13 @@
 # TypeScript project generator
 
+## Version 1.4.0
+- Implemented:
+  - `LICENSE` generator using a query to this [page](https://choosealicense.com/licenses/).
+  - [`underscore`](https://www.npmjs.com/package/underscore) to clean the HTML gotten in the query-
+  - `LICENSE` file, both in the current project and in the `templates` folder.
+- Updated:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+
 ## Version 1.3.1
 
 - Fixed:
