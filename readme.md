@@ -1,6 +1,6 @@
 # TypeScript project generator
 
-This project has the goal to create a basic setup for a TypeScript project. It will create many files that are usually created manually. Currently the following files are being created:
+This project has the goal to create a basic setup for a `TypeScript` project. It will create many files that are usually created manually. Currently the following files are being created:
 
 - `.env`
 - `.eslintignore`
@@ -39,7 +39,7 @@ You need to have internet connection to get the license from this [web page](htt
 
 ## Installation
 
-This project was intended to be installed globally, **not locally**, and also to initialize projects, be aware of that, you may broke something in your current working directory.
+**This project was intended to be installed globally, not locally**, and also to initialize projects, be aware of that, you may broke something in your current working directory.
 
 In order to install this package, run the following command in your terminal:
 
@@ -55,7 +55,7 @@ Once you have installed the package, please run the following command in your te
 tpg
 ```
 
-This will create a replica of the content of the [`lib/templates`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates) folder. Notice that the `.env` file is not there because is being ignored by the `.gitignore` file.
+This will create a replica of the content of the [`lib/templates`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates) folder. Notice that the `.env` file is not there because is being ignored by the `.gitignore` file. There is going to be a progress bar in order to show you how the set up process is going.
 
 Support for windows and linux platforms is available.
 

@@ -1,6 +1,6 @@
 {
   "name": "typescript-project-generator",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A TypeScript initial configuration for web projects",
   "main": "./lib/index.js",
   "scripts": {
@@ -12,6 +12,8 @@
   },
   "preferGlobal": true,
   "dependencies": {
+    "cli-progress": "^3.8.2",
+    "colors": "^1.4.0",
     "readline-sync": "^1.4.10",
     "underscore": "^1.10.2"
   },
@@ -23,7 +25,12 @@
   "keywords": [
     "TypeScript",
     "cli",
-    "tool"
+    "console",
+    "term",
+    "terminal",
+    "tool",
+    "tty",
+    "utility"
   ],
   "author": "AnthonyLzq",
   "license": "MIT",
