@@ -1,5 +1,11 @@
 # TypeScript project generator
 
+## Version 1.6.0
+- Implemented:
+  - Request in [`#3`](https://github.com/AnthonyLzq/typescript-project-generator/issues/3).
+- Updated:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+
 ## Version 1.5.0
 - Implemented:
   - Request in [`#2`](https://github.com/AnthonyLzq/typescript-project-generator/issues/2).

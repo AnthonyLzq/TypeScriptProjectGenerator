@@ -57,6 +57,8 @@ tpg
 
 This will create a replica of the content of the [`lib/templates`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates) folder. Notice that the `.env` file is not there because is being ignored by the `.gitignore` file.
 
+Support for windows and linux platforms is available.
+
 ## <a name="notes"></a>Notes
 
 Here is the list of the packages that are being installed:
