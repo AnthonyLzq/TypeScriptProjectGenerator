@@ -1,5 +1,9 @@
 # TypeScript project generator
 
+## Version 1.8.0
+- Implemented:
+  - Some code modularization.
+
 ## Version 1.7.0
 - Implemented:
   - A progress bar using [`cli-progress`](https://www.npmjs.com/package/cli-progress) and [`colors`](https://www.npmjs.com/package/colors).
