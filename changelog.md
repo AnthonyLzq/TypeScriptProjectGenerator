@@ -1,10 +1,15 @@
 # TypeScript project generator
 
+## Version 1.8.0
+- Implemented:
+  - Some code modularization.
+
 ## Version 1.7.0
 - Implemented:
-  - A progress bar using [`cli-progress`](https://www.npmjs.com/package/cli-progress) and  [`colors`](https://www.npmjs.com/package/colors).
+  - A progress bar using [`cli-progress`](https://www.npmjs.com/package/cli-progress) and [`colors`](https://www.npmjs.com/package/colors).
 - Updated:
   - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+  - [package.json](https://github.com/AnthonyLzq/typescript-project-generator/blob/master/package.json).
 
 ## Version 1.6.0
 - Implemented:
