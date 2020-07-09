@@ -27,15 +27,59 @@ The following questions will be asked to the user:
   - `Select your license [1...7]:`, the license you have chosen for the project.
   - `License year (current year):`, the year where your license starts, current year as default.
   - `Will this project be deployed with Heroku? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
-  - `Main file (src/index.ts):`, where is your main file located, `src/index.ts` as default. Notice that even if you change the location, only the `package.json` will be affected.
+  - ` Would you like to implement a express server with mongoose? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
 
-Additionally, a `src` folder will be created with an `ìndex.ts` file in it.
+## With `express` or without it?
+
+### Without `express`
+
+A `src` folder will be created with the following structure:
+```
+📦src
+ ┗ 📜index.ts
+```
+
+### With `express`
+
+A `src` folder will be created with the following structure:
+```
+📦src
+ ┣ 📂controllers
+ ┃ ┗ 📜users.ts
+ ┣ 📂custom
+ ┃ ┣ 📜express.request.ts
+ ┃ ┗ 📜express.response.ts
+ ┣ 📂dto-interfaces
+ ┃ ┗ 📜users.dto.ts
+ ┣ 📂models
+ ┃ ┗ 📜users.ts
+ ┣ 📂network
+ ┃ ┣ 📜response.ts
+ ┃ ┣ 📜routes.ts
+ ┃ ┗ 📜server.ts
+ ┣ 📂routes
+ ┃ ┣ 📜home.ts
+ ┃ ┗ 📜users.ts
+ ┗ 📜index.ts
+```
+
+Some considerations:
+
+- If you choose this option, now you are able to run a server that has one main route, `home` (`/`), and another one, `users` (`/users` or `/users/:userId`).
+- To connect your server with your `MongoDB` database, you need to provide your `uri` in the `.env` and uncomment the indicated lines in the `src/network/server.ts` file.
+- Once you have done that, now you can perform the following `HTTP REQUEST`: `GET`, `POST`, `PATCH` and `DELETE`.
+- The provided project structure is inspired in my personal experience as [`Node.js`](https://nodejs.org/en/) developer and the [`Nest`](https://nestjs.com/) framework.
+- The server is fully tested and has no errors (at least for now), feel free to report one [here](https://github.com/AnthonyLzq/typescript-project-generator/issues).
+- Check the content of those files, here:
+
+  - [`with-express`]()
+  - [`without-express`]()
 
 Finally, `git` will be initialized and a list of libraries will be installed. Check the [**notes**](#notes).
 
 ## Prerequisites
 
-You need to have internet connection to get the license from this [web page](https://choosealicense.com/licenses/).
+You need to have internet connection to install the packages and to get the license from this [web page](https://choosealicense.com/licenses/).
 
 ## Installation
 
@@ -61,7 +105,7 @@ Support for windows and linux platforms is available.
 
 ## <a name="notes"></a>Notes
 
-Here is the list of the packages that are being installed:
+Here is the list of the packages that are being installed, as`devDependencies`:
 
 - [`@types/node`](https://www.npmjs.com/package/@types/node)
 - [`@typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
@@ -82,6 +126,19 @@ Here is the list of the packages that are being installed:
 - [`webpack`](https://www.npmjs.com/package/webpack)
 - [`webpack-cli`](https://www.npmjs.com/package/webpack-cli)
 - [`webpack-node-externals`](https://www.npmjs.com/package/webpack-node-externals)
+
+### Optionals
+
+As `devDependencies`:
+
+- [`@types/express`](https://github.com/AnthonyLzq/typescript-project-generator/issues)
+- [`@types/mongoose`](https://www.npmjs.com/package/@types/mongoose)
+- [`@types/morgan`](https://www.npmjs.com/package/@types/morgan)
+
+As `dependencies`:
+- [`express`](https://expressjs.com/)
+- [`mongoose`](https://mongoosejs.com/)
+- [`morgan`](https://www.npmjs.com/package/morgan)
 
 Feel free to contribute to this project. Every contribution will be appreciated.
 

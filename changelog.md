@@ -1,5 +1,12 @@
 # TypeScript project generator
 
+## Version 2.0.0
+- Implemented:
+  - A new feature that allows you to build a server with [`express`](https://expressjs.com/) and [`mongoose`](https://mongoosejs.com/).
+  - New templates, one that has the `express` server, and that doesn't has it. One folder is called `lib/new-templates/with-express` and the other one is called `lib/new-templates/without-express`.
+  - Minor errors in the indentation where fixed.
+  - Now the project description is added into the `readme.md` file.
+
 ## Version 1.8.0
 - Implemented:
   - Some code modularization.
