@@ -70,10 +70,11 @@ Some considerations:
 - Once you have done that, now you can perform the following `HTTP REQUEST`: `GET`, `POST`, `PATCH` and `DELETE`.
 - The provided project structure is inspired in my personal experience as [`Node.js`](https://nodejs.org/en/) developer and the [`Nest`](https://nestjs.com/) framework.
 - The server is fully tested and has no errors (at least for now), feel free to report one [here](https://github.com/AnthonyLzq/typescript-project-generator/issues).
+- Support for windows and linux platforms is available.
 - Check the content of those files, here:
 
-  - [`with-express`]()
-  - [`without-express`]()
+  - [`with-express`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/new-templates/with-express)
+  - [`without-express`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/new-templates/without-express)
 
 Finally, `git` will be initialized and a list of libraries will be installed. Check the [**notes**](#notes).
 
@@ -99,9 +100,7 @@ Once you have installed the package, please run the following command in your te
 tpg
 ```
 
-This will create a replica of the content of the [`lib/templates`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates) folder. Notice that the `.env` file is not there because is being ignored by the `.gitignore` file. There is going to be a progress bar in order to show you how the set up process is going.
-
-Support for windows and linux platforms is available.
+This will guide you in a process to initialize your new project, asking you the questions shown above.
 
 ## <a name="notes"></a>Notes
 
