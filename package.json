@@ -1,10 +1,10 @@
 {
   "name": "typescript-project-generator",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A TypeScript initial configuration for web projects",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "yarn rm && mkdir lib/templates && cd lib/templates && node ../../bin/index.js",
+    "test": "npm run rm && mkdir lib/templates && cd lib/templates && node ../../bin/index.js",
     "rm": "if [ -d \"lib/templates\" ]; then rm -Rf lib/templates; fi"
   },
   "bin": {
@@ -15,7 +15,7 @@
     "cli-progress": "^3.8.2",
     "colors": "^1.4.0",
     "readline-sync": "^1.4.10",
-    "underscore": "^1.10.2"
+    "underscore": "^1.11.0"
   },
   "devDependencies": {},
   "repository": {

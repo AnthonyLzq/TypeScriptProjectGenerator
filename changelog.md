@@ -1,5 +1,9 @@
 # TypeScript project generator
 
+## Version 2.0.1
+- Fixed:
+  - Updated packages.
+
 ## Version 2.0.0
 - Implemented:
   - A new feature that allows you to build a server with [`express`](https://expressjs.com/) and [`mongoose`](https://mongoosejs.com/).
