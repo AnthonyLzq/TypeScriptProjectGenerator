@@ -51,9 +51,9 @@ A `src` folder will be created with the following structure:
  ┣ 📂controllers
  ┃ ┗ 📜users.ts
  ┣ 📂custom
- ┃ ┣ 📜global.variables.ts
  ┃ ┣ 📜express.request.ts
- ┃ ┗ 📜express.response.ts
+ ┃ ┣ 📜express.response.ts
+ ┃ ┗ 📜global.variables.ts
  ┣ 📂dto-interfaces
  ┃ ┗ 📜users.dto.ts
  ┣ 📂models
