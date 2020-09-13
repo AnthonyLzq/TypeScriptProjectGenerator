@@ -1,5 +1,11 @@
 # TypeScript project generator
 
+## Version 2.2.0
+
+- Updated:
+  - [Templates](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates).
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+
 ## Version 2.1.0
 
 - Implemented:

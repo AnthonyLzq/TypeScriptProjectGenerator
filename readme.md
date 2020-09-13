@@ -84,8 +84,8 @@ Some considerations:
 - Support for windows and linux platforms is available.
 - Check the content of those files, here:
 
-  - [`with-express`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/new-templates/with-express)
-  - [`without-express`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/new-templates/without-express)
+  - [`with-express`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates/with-express)
+  - [`without-express`](https://github.com/AnthonyLzq/typescript-project-generator/tree/master/lib/templates/without-express)
 
 Finally, `git` will be initialized and a list of libraries will be installed. Check the [**notes**](#notes).
 

@@ -1,11 +1,11 @@
-FROM node: lts
+FROM node:lts
 
-WORKDIR / app
+WORKDIR /app
 
 COPY package.json ./
 
-RUN yarn install - -prod
+RUN yarn install --prod
 
-copy dist / app/dist
+copy dist /app/dist
 
 CMD [ "yarn", "start" ]
