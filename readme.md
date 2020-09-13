@@ -29,6 +29,10 @@ The following questions will be asked to the user:
   - `Will this project be deployed with Heroku? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
   - ` Would you like to implement a express server with mongoose? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
 
+## What is new?
+
+Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-project-generator/blob/master/changelog.md) file.
+
 ## With `express` or without it?
 
 ### Without `express`
@@ -47,6 +51,7 @@ A `src` folder will be created with the following structure:
  ┣ 📂controllers
  ┃ ┗ 📜users.ts
  ┣ 📂custom
+ ┃ ┣ 📜global.variables.ts
  ┃ ┣ 📜express.request.ts
  ┃ ┗ 📜express.response.ts
  ┣ 📂dto-interfaces
@@ -68,6 +73,12 @@ Some considerations:
 - If you choose this option, now you are able to run a server that has one main route, `home` (`/`), and another one, `users` (`/users` or `/users/:userId`).
 - To connect your server with your `MongoDB` database, you need to provide your `uri` in the `.env` and uncomment the indicated lines in the `src/network/server.ts` file.
 - Once you have done that, now you can perform the following `HTTP REQUEST`: `GET`, `POST`, `PATCH` and `DELETE`.
+- In order to use the global variable declared in the `src/custom/global.variables.ts` file, you have to add the following lines in the external file you want to use it:
+    ```typescript
+    import { CustomNodeJSGlobal } from '/direction/to/global.variables/file'
+    declare const global: CustomNodeJSGlobal
+    ```
+    Now, your are able to use the global variable.
 - The provided project structure is inspired in my personal experience as [`Node.js`](https://nodejs.org/en/) developer and the [`Nest`](https://nestjs.com/) framework.
 - The server is fully tested and has no errors (at least for now), feel free to report one [here](https://github.com/AnthonyLzq/typescript-project-generator/issues).
 - Support for windows and linux platforms is available.
@@ -104,7 +115,7 @@ This will guide you in a process to initialize your new project, asking you the 
 
 ## <a name="notes"></a>Notes
 
-Here is the list of the packages that are being installed, as`devDependencies`:
+Here is the list of the packages that are being installed, as `devDependencies`:
 
 - [`@types/node`](https://www.npmjs.com/package/@types/node)
 - [`@typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)

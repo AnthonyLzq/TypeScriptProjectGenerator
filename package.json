@@ -1,11 +1,11 @@
 {
   "name": "typescript-project-generator",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A TypeScript initial configuration for web projects",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "npm run rm && mkdir lib/templates && cd lib/templates && node ../../bin/index.js",
-    "rm": "if [ -d \"lib/templates\" ]; then rm -Rf lib/templates; fi"
+    "test": "npm run rm && mkdir lib/test && cd lib/test && node ../../bin/index.js",
+    "rm": "if [ -d \"lib/test\" ]; then rm -Rf lib/test; fi"
   },
   "bin": {
     "tpg": "./bin/index.js"

@@ -1,5 +1,18 @@
 # TypeScript project generator
 
+## Version 2.1.0
+
+- Implemented:
+  - Support for global variables.
+- Updated:
+  - Updated eslint rules.
+  - Changelog and readme.
+  - `tsconfig.json` file.
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+- Fixed:
+  - Dockerfile.
+  - License in the `package.json` file.
+
 ## Version 2.0.1
 - Fixed:
   - Updated packages.
