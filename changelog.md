@@ -1,5 +1,11 @@
 # TypeScript project generator
 
+## Version 2.3.0
+
+- Implemented:
+  - In the `express-server` version `Access-Control-Allow-Methods` by default, `GET` and `POST` are allowed.
+  - `package-lock.json` file.
+
 ## Version 2.2.1
 
 - Fixed:
@@ -25,10 +31,12 @@
   - License in the `package.json` file.
 
 ## Version 2.0.1
+
 - Fixed:
   - Updated packages.
 
 ## Version 2.0.0
+
 - Implemented:
   - A new feature that allows you to build a server with [`express`](https://expressjs.com/) and [`mongoose`](https://mongoosejs.com/).
   - New templates, one that has the `express` server, and that doesn't has it. One folder is called `lib/new-templates/with-express` and the other one is called `lib/new-templates/without-express`.
@@ -36,10 +44,12 @@
   - Now the project description is added into the `readme.md` file.
 
 ## Version 1.8.0
+
 - Implemented:
   - Some code modularization.
 
 ## Version 1.7.0
+
 - Implemented:
   - A progress bar using [`cli-progress`](https://www.npmjs.com/package/cli-progress) and [`colors`](https://www.npmjs.com/package/colors).
 - Updated:
@@ -47,12 +57,14 @@
   - [package.json](https://github.com/AnthonyLzq/typescript-project-generator/blob/master/package.json).
 
 ## Version 1.6.0
+
 - Implemented:
   - Request in [`#3`](https://github.com/AnthonyLzq/typescript-project-generator/issues/3).
 - Updated:
   - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
 
 ## Version 1.5.0
+
 - Implemented:
   - Request in [`#2`](https://github.com/AnthonyLzq/typescript-project-generator/issues/2).
   - Prompt messages when the user made a mistake.
@@ -61,6 +73,7 @@
   - [package.json](https://github.com/AnthonyLzq/typescript-project-generator/blob/master/package.json).
 
 ## Version 1.4.0
+
 - Implemented:
   - `LICENSE` generator using a query to this [page](https://choosealicense.com/licenses/).
   - [`underscore`](https://www.npmjs.com/package/underscore) to clean the HTML gotten in the query.
@@ -100,10 +113,14 @@
 ## Version 1.1.1
 
 - Fixed:
-  - `bin/index.js` file, there was missing the following: 
+
+  - `bin/index.js` file, there was missing the following:
+
     ```node
     #!/usr/bin/env node
+
     ```
+
     in the first line.
 
 ## Version 1.1.0
