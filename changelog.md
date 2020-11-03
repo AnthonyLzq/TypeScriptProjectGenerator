@@ -1,5 +1,10 @@
 # TypeScript project generator
 
+## Version 2.4.0
+
+- Implemented:
+  - Handling 404 error.
+
 ## Version 2.3.0
 
 - Implemented:
