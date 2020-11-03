@@ -18,16 +18,17 @@ This project has the goal to create a basic setup for a `TypeScript` project. It
 - `webpack.config.js`
 
 The following questions will be asked to the user:
-  - `Yarn or npm?`, only one of them is valid.
-  - `Project name:`, at least one character must be provided.
-  - `Project description:`, at least one character must be provided.
-  - `Author:`, at least one character must be provided.
-  - `Email:`, a correct email address must be provided.
-  - `Project version (0.1.0):` the initial version of the project, `0.1.0` as default.
-  - `Select your license [1...7]:`, the license you have chosen for the project.
-  - `License year (current year):`, the year where your license starts, current year as default.
-  - `Will this project be deployed with Heroku? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
-  - ` Would you like to implement a express server with mongoose? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
+
+- `Yarn or npm?`, only one of them is valid.
+- `Project name:`, at least one character must be provided.
+- `Project description:`, at least one character must be provided.
+- `Author:`, at least one character must be provided.
+- `Email:`, a correct email address must be provided.
+- `Project version (0.1.0):` the initial version of the project, `0.1.0` as default.
+- `Select your license [1...7]:`, the license you have chosen for the project.
+- `License year (current year):`, the year where your license starts, current year as default.
+- `Will this project be deployed with Heroku? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
+- ` Would you like to implement a express server with mongoose? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
 
 ## What is new?
 
@@ -38,6 +39,7 @@ Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-proje
 ### Without `express`
 
 A `src` folder will be created with the following structure:
+
 ```
 📦src
  ┗ 📜index.ts
@@ -46,11 +48,13 @@ A `src` folder will be created with the following structure:
 ### With `express`
 
 A `src` folder will be created with the following structure:
+
 ```
 📦src
  ┣ 📂controllers
  ┃ ┗ 📜users.ts
  ┣ 📂custom
+ ┃ ┣ 📜error.ts
  ┃ ┣ 📜express.request.ts
  ┃ ┣ 📜express.response.ts
  ┃ ┗ 📜global.variables.ts
@@ -74,11 +78,11 @@ Some considerations:
 - To connect your server with your `MongoDB` database, you need to provide your `uri` in the `.env` and uncomment the indicated lines in the `src/network/server.ts` file.
 - Once you have done that, now you can perform the following `HTTP REQUEST`: `GET`, `POST`, `PATCH` and `DELETE`.
 - In order to use the global variable declared in the `src/custom/global.variables.ts` file, you have to add the following lines in the external file you want to use it:
-    ```typescript
-    import { CustomNodeJSGlobal } from '/direction/to/global.variables/file'
-    declare const global: CustomNodeJSGlobal
-    ```
-    Now, your are able to use the global variable.
+  ```typescript
+  import { CustomNodeJSGlobal } from "/direction/to/global.variables/file";
+  declare const global: CustomNodeJSGlobal;
+  ```
+  Now, your are able to use the global variable.
 - The provided project structure is inspired in my personal experience as [`Node.js`](https://nodejs.org/en/) developer and the [`Nest`](https://nestjs.com/) framework.
 - The server is fully tested and has no errors (at least for now), feel free to report one [here](https://github.com/AnthonyLzq/typescript-project-generator/issues).
 - Support for windows and linux platforms is available.
@@ -146,6 +150,7 @@ As `devDependencies`:
 - [`@types/morgan`](https://www.npmjs.com/package/@types/morgan)
 
 As `dependencies`:
+
 - [`express`](https://expressjs.com/)
 - [`mongoose`](https://mongoosejs.com/)
 - [`morgan`](https://www.npmjs.com/package/morgan)
@@ -153,4 +158,5 @@ As `dependencies`:
 Feel free to contribute to this project. Every contribution will be appreciated.
 
 ## Author
--   **Anthony Luzquiños** - _Initial Work_ - _Documentation_ - [AnthonyLzq](https://github.com/AnthonyLzq).
+
+- **Anthony Luzquiños** - _Initial Work_ - _Documentation_ - [AnthonyLzq](https://github.com/AnthonyLzq).

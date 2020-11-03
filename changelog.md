@@ -1,5 +1,10 @@
 # TypeScript project generator
 
+## Version 2.4.1
+
+- Fixed:
+  - [Documentation](https://github.com/AnthonyLzq/typescript-project-generator#readme).
+
 ## Version 2.4.0
 
 - Implemented:
