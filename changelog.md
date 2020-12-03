@@ -1,5 +1,10 @@
 # TypeScript project generator
 
+## Version 2.4.2
+
+- Fixed:
+  - Bug of the `server.ts` file, there was a **'** missing.
+
 ## Version 2.4.1
 
 - Fixed:
