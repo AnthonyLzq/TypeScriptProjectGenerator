@@ -1,5 +1,10 @@
 # TypeScript project generator
 
+## Version 2.5.0
+
+- Updated:
+  - Dependencies.
+
 ## Version 2.4.2
 
 - Fixed:
