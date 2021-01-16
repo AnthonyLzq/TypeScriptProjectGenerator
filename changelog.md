@@ -1,5 +1,12 @@
 # TypeScript project generator
 
+## Version 2.6.0
+
+- Implemented:
+  - New regex expression to validate emails, token from [here](https://stackoverflow.com/a/46181/12379333).
+- Updated:
+  - Dependencies.
+
 ## Version 2.5.0
 
 - Updated:
