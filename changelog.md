@@ -1,5 +1,10 @@
 # TypeScript project generator
 
+## Version 2.8.1
+
+- Fixed:
+  - Import in the `express.request.ts` file.
+
 ## Version 2.8.0
 
 - Implemented:
