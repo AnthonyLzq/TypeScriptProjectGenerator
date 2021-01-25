@@ -1,15 +1,14 @@
 import { Router } from 'express'
-import { Response } from '../custom/express.response'
-import { Request } from '../custom/express.request'
-import { response } from  '../network/response'
-import { Users as UsersC } from '../controllers/users'
-import { DtoUsers } from '../dto-interfaces/users.dto'
+import { Response, Request } from '../custom'
+import { response } from  '../utils'
+import { User as UserC } from '../controllers/user'
+import { DtoUser } from '../dto-interfaces'
 
-const Users = Router()
+const User = Router()
 
-Users.route('/users/')
+User.route('/users/')
   .get(async (req: Request, res: Response): Promise<void> => {
-    const uc = new UsersC()
+    const uc = new UserC()
 
     try {
       const result = await uc.process('getAll')
@@ -21,7 +20,7 @@ Users.route('/users/')
   })
   .post(async (req: Request, res: Response): Promise<void> => {
     const { body: { args } } = req
-    const uc = new UsersC(args as DtoUsers)
+    const uc = new UserC(args as DtoUser)
 
     try {
       const result = await uc.process('store')
@@ -32,7 +31,7 @@ Users.route('/users/')
     }
   })
   .delete(async (req: Request, res: Response): Promise<void> => {
-    const uc = new UsersC()
+    const uc = new UserC()
 
     try {
       const result = await uc.process('deleteAll')
@@ -43,13 +42,13 @@ Users.route('/users/')
     }
   })
 
-Users.route('/users/:userId')
+User.route('/users/:userId')
   .get(async (req: Request, res: Response): Promise<void> => {
     const { params: { userId } } = req
     const dto = {
       id: userId
     }
-    const uc = new UsersC(dto as DtoUsers)
+    const uc = new UserC(dto as DtoUser)
 
     try {
       const result = await uc.process('getOne')
@@ -66,7 +65,7 @@ Users.route('/users/:userId')
       lastName,
       name
     }
-    const uc = new UsersC(dto as DtoUsers)
+    const uc = new UserC(dto as DtoUser)
 
     try {
       const result = await uc.process('update')
@@ -79,7 +78,7 @@ Users.route('/users/:userId')
   .delete(async (req: Request, res: Response): Promise<void> => {
     const { params: { userId } } = req
     const dto = { id: userId }
-    const uc = new UsersC(dto as DtoUsers)
+    const uc = new UserC(dto as DtoUser)
 
     try {
       const result = await uc.process('delete')
@@ -90,4 +89,4 @@ Users.route('/users/:userId')
     }
   })
 
-export { Users }
+export { User }

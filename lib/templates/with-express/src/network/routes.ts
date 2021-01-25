@@ -1,10 +1,9 @@
 import { Application, Response, Request, Router, NextFunction } from 'express'
-import { Home } from '../routes/home'
-import { Users } from '../routes/users'
-import { CustomError, ICustomError } from '../custom/error'
-import { response } from './response'
+import { Home, User } from '../routes'
+import { CustomError, ICustomError } from '../custom'
+import { response } from '../utils'
 
-const routers = [ Users ]
+const routers = [ User ]
 
 const applyRoutes = (app: Application): void => {
   app.use('/', Home)
@@ -26,3 +25,4 @@ const applyRoutes = (app: Application): void => {
 }
 
 export { applyRoutes }
+

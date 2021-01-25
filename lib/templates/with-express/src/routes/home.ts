@@ -1,5 +1,5 @@
 import { Response, Request, Router } from 'express'
-import { response } from '../network/response'
+import { response } from '../utils'
 
 const Home = Router()
 

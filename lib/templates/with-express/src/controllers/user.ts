@@ -1,19 +1,19 @@
-import { DtoUsers } from '../dto-interfaces/users.dto'
-import { IUsers, UsersModel } from '../models/users'
+import { DtoUser } from '../dto-interfaces'
+import { IUser, UserModel } from '../models'
 
-class Users {
-  private _args: DtoUsers | null
+class User {
+  private _args: DtoUser | null
 
-  constructor (args: DtoUsers | null = null) {
+  constructor (args: DtoUser | null = null) {
     this._args = args
   }
 
   process (
     type: string
   ):
-    Promise<IUsers[]> |
-    Promise<IUsers | null> |
-    Promise<IUsers> |
+    Promise<IUser[]> |
+    Promise<IUser | null> |
+    Promise<IUser> |
     Promise<number | undefined> |
     undefined {
     switch (type) {
@@ -34,10 +34,10 @@ class Users {
     }
   }
 
-  private async _delete (): Promise<IUsers | null> {
-    const { id } = this._args as DtoUsers
+  private async _delete (): Promise<IUser | null> {
+    const { id } = this._args as DtoUser
     try {
-      const deletedUser = await UsersModel.findOneAndDelete({ id })
+      const deletedUser = await UserModel.findOneAndDelete({ id })
 
       return deletedUser
     } catch (error) {
@@ -49,7 +49,7 @@ class Users {
   // eslint-disable-next-line class-methods-use-this
   private async _deleteAll () {
     try {
-      const deletedUsers = await UsersModel.deleteMany({})
+      const deletedUsers = await UserModel.deleteMany({})
 
       return deletedUsers.ok
     } catch (error) {
@@ -59,9 +59,9 @@ class Users {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  private async _getAll (): Promise<IUsers[]> {
+  private async _getAll (): Promise<IUser[]> {
     try {
-      const users = await UsersModel.find({})
+      const users = await UserModel.find({})
 
       return users
     } catch (error) {
@@ -70,10 +70,10 @@ class Users {
     }
   }
 
-  private async _getOne (): Promise<IUsers | null> {
-    const { id } = this._args as DtoUsers
+  private async _getOne (): Promise<IUser | null> {
+    const { id } = this._args as DtoUser
     try {
-      const user = await UsersModel.findOne({ id })
+      const user = await UserModel.findOne({ id })
 
       return user
     } catch (error) {
@@ -82,12 +82,12 @@ class Users {
     }
   }
 
-  private async _store (): Promise<IUsers> {
-    const { id, lastName, name } = this._args as DtoUsers
+  private async _store (): Promise<IUser> {
+    const { id, lastName, name } = this._args as DtoUser
     try {
       if (!lastName || !name) throw new Error('Name and last name are required')
 
-      const newUser = new UsersModel({ id, lastName, name })
+      const newUser = new UserModel({ id, lastName, name })
       const result = await newUser.save()
 
       return result
@@ -97,27 +97,27 @@ class Users {
     }
   }
 
-  private async _update (): Promise<IUsers | null> {
-    const { id, lastName, name } = this._args as DtoUsers
+  private async _update (): Promise<IUser | null> {
+    const { id, lastName, name } = this._args as DtoUser
     try {
-      let updatedUser: IUsers | null
+      let updatedUser: IUser | null
 
       if (!lastName && !name)
         throw new Error('Name or last name must be provided.')
       else if (!lastName)
-        updatedUser = await UsersModel.findOneAndUpdate(
+        updatedUser = await UserModel.findOneAndUpdate(
           { id },
           { name },
           { new: true }
         )
       else if (!name)
-        updatedUser = await UsersModel.findOneAndUpdate(
+        updatedUser = await UserModel.findOneAndUpdate(
           { id },
           { lastName },
           { new: true }
         )
       else
-        updatedUser = await UsersModel.findOneAndUpdate(
+        updatedUser = await UserModel.findOneAndUpdate(
           { id },
           { lastName, name },
           { new: true }
@@ -135,4 +135,4 @@ class Users {
   }
 }
 
-export { Users }
+export { User }

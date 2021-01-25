@@ -1,12 +1,12 @@
 import { Document, model, Schema } from 'mongoose'
 
-interface IUsers extends Document {
+interface IUser extends Document {
   id      : string,
   lastName: string,
   name    : string
 }
 
-const Users = new Schema(
+const User = new Schema(
   {
     id: {
       required: true,
@@ -19,7 +19,7 @@ const Users = new Schema(
     },
     name: {
       required: true,
-      type    : String,
+      type    : String
     }
   },
   {
@@ -30,6 +30,6 @@ const Users = new Schema(
   }
 )
 
-const UsersModel = model<IUsers>('users', Users)
+const UserModel = model<IUser>('users', User)
 
-export { IUsers, UsersModel }
+export { IUser, UserModel }

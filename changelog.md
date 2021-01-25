@@ -1,5 +1,14 @@
 # TypeScript project generator
 
+## Version 2.7.0
+
+- Implemented:
+  - Reworked structure for the `express` template.
+  - `index.ts` file in each folder.
+  - `response.ts` has been moved from network to utils folder.
+- Updated:
+  - Internal dependencies.
+
 ## Version 2.6.0
 
 - Implemented:
