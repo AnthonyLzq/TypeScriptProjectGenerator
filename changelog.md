@@ -1,5 +1,12 @@
 # TypeScript project generator
 
+## Version 2.8.0
+
+- Implemented:
+  - The methods PATCH and DELETE are now allowed in the server.
+- Updated:
+  - Documentation.
+
 ## Version 2.7.0
 
 - Implemented:

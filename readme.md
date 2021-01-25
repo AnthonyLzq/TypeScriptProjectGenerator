@@ -52,35 +52,44 @@ A `src` folder will be created with the following structure:
 ```
 📦src
  ┣ 📂controllers
+ ┃ ┣ 📜index.ts
  ┃ ┗ 📜users.ts
  ┣ 📂custom
  ┃ ┣ 📜error.ts
  ┃ ┣ 📜express.request.ts
  ┃ ┣ 📜express.response.ts
- ┃ ┗ 📜global.variables.ts
+ ┃ ┣ 📜global.variables.ts
+ ┃ ┗ 📜index.ts
  ┣ 📂dto-interfaces
+ ┃ ┣ 📜index.ts
  ┃ ┗ 📜users.dto.ts
  ┣ 📂models
- ┃ ┗ 📜users.ts
+ ┃ ┣ 📜index.ts
+ ┃ ┗ 📜user.ts
  ┣ 📂network
- ┃ ┣ 📜response.ts
+ ┃ ┣ 📜index.ts
  ┃ ┣ 📜routes.ts
  ┃ ┗ 📜server.ts
  ┣ 📂routes
  ┃ ┣ 📜home.ts
- ┃ ┗ 📜users.ts
+ ┃ ┣ 📜index.ts
+ ┃ ┗ 📜user.ts
+ ┣ 📂utils
+ ┃ ┣ 📜index.ts
+ ┃ ┗ 📜response.ts
  ┗ 📜index.ts
 ```
 
 Some considerations:
 
-- If you choose this option, now you are able to run a server that has one main route, `home` (`/`), and another one, `users` (`/users` or `/users/:userId`).
+- If you choose this option, now you are able to run a server that has one main route, `home` (`/`), and another one, `user` (`/user` or `/user/:userId`).
 - To connect your server with your `MongoDB` database, you need to provide your `uri` in the `.env` and uncomment the indicated lines in the `src/network/server.ts` file.
 - Once you have done that, now you can perform the following `HTTP REQUEST`: `GET`, `POST`, `PATCH` and `DELETE`.
 - In order to use the global variable declared in the `src/custom/global.variables.ts` file, you have to add the following lines in the external file you want to use it:
   ```typescript
-  import { CustomNodeJSGlobal } from "/direction/to/global.variables/file";
-  declare const global: CustomNodeJSGlobal;
+  import { CustomNodeJSGlobal } from "/direction/to/global.variables/file"
+
+  declare const global: CustomNodeJSGlobal
   ```
   Now, your are able to use the global variable.
 - The provided project structure is inspired in my personal experience as [`Node.js`](https://nodejs.org/en/) developer and the [`Nest`](https://nestjs.com/) framework.
