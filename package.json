@@ -1,6 +1,6 @@
 {
   "name": "typescript-project-generator",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "A TypeScript initial configuration for web projects",
   "main": "./lib/index.js",
   "scripts": {

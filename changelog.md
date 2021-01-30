@@ -1,5 +1,11 @@
 # TypeScript project generator
 
+## Version 2.8.2
+
+- Fixed:
+  - Dto name files.
+  - Documentation.
+
 ## Version 2.8.1
 
 - Fixed:

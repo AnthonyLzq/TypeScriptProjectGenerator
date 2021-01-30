@@ -1,3 +1,3 @@
-import { DtoUser } from './users.dto'
+import { DtoUser } from './user.dto'
 
 export { DtoUser }

@@ -53,7 +53,7 @@ A `src` folder will be created with the following structure:
 📦src
  ┣ 📂controllers
  ┃ ┣ 📜index.ts
- ┃ ┗ 📜users.ts
+ ┃ ┗ 📜user.ts
  ┣ 📂custom
  ┃ ┣ 📜error.ts
  ┃ ┣ 📜express.request.ts
@@ -62,7 +62,7 @@ A `src` folder will be created with the following structure:
  ┃ ┗ 📜index.ts
  ┣ 📂dto-interfaces
  ┃ ┣ 📜index.ts
- ┃ ┗ 📜users.dto.ts
+ ┃ ┗ 📜user.dto.ts
  ┣ 📂models
  ┃ ┣ 📜index.ts
  ┃ ┗ 📜user.ts
