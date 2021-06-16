@@ -1,5 +1,13 @@
 # TypeScript project generator
 
+## Version 2.9.0
+
+- Implemented:
+  - Updated packages.
+  - Updated eslint rules.
+- Fixed:
+  - A bug related with eslint and prettier.
+
 ## Version 2.8.2
 
 - Fixed:

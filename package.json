@@ -1,6 +1,6 @@
 {
   "name": "typescript-project-generator",
-  "version": "2.8.2",
+  "version": "2.9.0",
   "description": "A TypeScript initial configuration for web projects",
   "main": "./lib/index.js",
   "scripts": {
@@ -12,10 +12,10 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "cli-progress": "^3.8.2",
+    "cli-progress": "^3.9.0",
     "colors": "^1.4.0",
     "readline-sync": "^1.4.10",
-    "underscore": "^1.12.0"
+    "underscore": "^1.13.1"
   },
   "devDependencies": {},
   "repository": {
