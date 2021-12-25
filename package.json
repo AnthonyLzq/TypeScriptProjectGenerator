@@ -1,0 +1,52 @@
+{
+  "name": "typescript-project-generator",
+  "version": "2.9.0",
+  "description": "A TypeScript initial configuration for web projects",
+  "main": "./lib/index.js",
+  "scripts": {
+    "service": "node ./bin",
+    "test": "npm run rm && mkdir example && cd example && node ../bin/index.js",
+    "rm": "if [ -d \"example\" ]; then rm -rf example; fi",
+    "lint": "eslint --ext js lib/ --fix",
+    "release": "standard-version"
+  },
+  "bin": {
+    "tpg": "./bin/index.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "cli-progress": "^3.9.0",
+    "colors": "^1.4.0",
+    "readline-sync": "^1.4.10",
+    "underscore": "^1.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "standard-version": "^9.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyLzq/typescript-project-generator.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "cli",
+    "console",
+    "term",
+    "terminal",
+    "tool",
+    "tty",
+    "utility"
+  ],
+  "author": "AnthonyLzq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnthonyLzq/typescript-project-generator/issues"
+  },
+  "homepage": "https://github.com/AnthonyLzq/typescript-project-generator#readme"
+}
