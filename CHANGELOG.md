@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.0.0...v3.1.0) (2022-01-29)
+
+
+### Features
+
+* updated packages ([5d5b3fe](https://github.com/AnthonyLzq/typescript-project-generator/commit/5d5b3fea15ca2f5967191ed7c5acc2794f85dff9))
+
+
+### Bug Fixes
+
+* .eslintrc content ([3bdcdb9](https://github.com/AnthonyLzq/typescript-project-generator/commit/3bdcdb92af111b0ef74dd53c7f4a066044563768))
+
 ## 3.0.0 (2021-12-25)
 
 
