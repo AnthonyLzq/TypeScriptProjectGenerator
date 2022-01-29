@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.1.0...v3.1.1) (2022-01-29)
+
+
+### Bug Fixes
+
+* eslint pair dependencies ([731b45d](https://github.com/AnthonyLzq/typescript-project-generator/commit/731b45d5b5351196252eeb3159fedf9ad5b0a1e8))
+
 ## [3.1.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.0.0...v3.1.0) (2022-01-29)
 
 
