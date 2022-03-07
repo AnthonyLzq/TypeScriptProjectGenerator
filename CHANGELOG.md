@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.1.1...v3.2.0) (2022-03-07)
+
+
+### Features
+
+* updated example and packages ([6c07886](https://github.com/AnthonyLzq/typescript-project-generator/commit/6c0788689d0e9a18d6b6449098f16d2943085bb9))
+
+
+### Bug Fixes
+
+* first attempt to fix nodemon bug in windows ([2e716ac](https://github.com/AnthonyLzq/typescript-project-generator/commit/2e716ac4593c38b9647634671513867a4fe9398a))
+
 ### [3.1.1](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.1.0...v3.1.1) (2022-01-29)
 
 
