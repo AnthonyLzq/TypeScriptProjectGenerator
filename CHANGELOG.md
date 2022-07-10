@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.2.0...v4.0.0) (2022-07-10)
+
+### Features
+
+* implemented files field in package.json ([71c0fc1](https://github.com/AnthonyLzq/typescript-project-generator/commit/71c0fc1b63f8897dcd5a9ab0876c15dba2c7f647))
+* updated docs ([f908b24](https://github.com/AnthonyLzq/typescript-project-generator/commit/f908b24f55dff804da417bd902415d9c76c09e55))
+* implemented tests and a github action for them ([84c7badb](https://github.com/AnthonyLzq/typescript-project-generator/commit/84c7badb8b873d128b63d000fcebd15b52073aca))
+* updated packages ([4e93d74](https://github.com/AnthonyLzq/typescript-project-generator/commit/4e93d74ba3d0b7b0b53ef910a8f1fd752f5f66c3))
+* minor project improvements ([e76f9bd](https://github.com/AnthonyLzq/typescript-project-generator/commit/e76f9bd76a8859b9da62acd1bad3e8e1db763088))
+
 ## [3.2.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.1.1...v3.2.0) (2022-03-07)
 
 
