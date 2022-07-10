@@ -27,7 +27,9 @@ The following questions will be asked to the user:
 - `Project version (0.1.0):` the initial version of the project, `0.1.0` as default.
 - `Select your license [1...7]:`, the license you have chosen for the project.
 - `License year (current year):`, the year where your license starts, current year as default.
-- `Will this project be deployed with Heroku? [y/n]:`, yes or no question, only **y** or **n** is accepted. This is not case sensitive.
+- `Will this project be deployed with Heroku? [y/n]`:, yes or no question, only y or n is accepted. This is not case sensitive.
+- `Would you want to have a basic suit of tests with Jest? [y/n]`.
+- ` [y/n]`.
 
 ## What is new?
 
@@ -109,6 +111,17 @@ Here is the list of the packages that are being installed, as `devDependencies`:
 - [`webpack`](https://www.npmjs.com/package/webpack)
 - [`webpack-cli`](https://www.npmjs.com/package/webpack-cli)
 - [`webpack-node-externals`](https://www.npmjs.com/package/webpack-node-externals)
+
+### Yarn case:
+- [`eslint-plugin-n`](https://www.npmjs.com/package/eslint-plugin-n)
+
+### In case you chose to use the suit of case
+- [`@jest/types`](https://www.npmjs.com/package/@jest/types)
+- [`@types/jest`](https://www.npmjs.com/package/@types/jest)
+- [`eslint-plugin-jest`](https://www.npmjs.com/package/eslint-plugin-jest)
+- [`jest`](https://www.npmjs.com/package/jest)
+- [`jest-unit`](https://www.npmjs.com/package/jest-unit)
+- [`ts-jest`](https://www.npmjs.com/package/ts-jest)
 
 Feel free to contribute to this project. Every contribution will be appreciated.
 
