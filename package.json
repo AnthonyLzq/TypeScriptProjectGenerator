@@ -15,19 +15,19 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "cli-progress": "^3.10.0",
+    "cli-progress": "^3.11.2",
     "colors": "^1.4.0",
     "readline-sync": "^1.4.10",
-    "underscore": "^1.13.2"
+    "underscore": "^1.13.4"
   },
   "devDependencies": {
-    "eslint": "^8.10.0",
+    "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "standard-version": "^9.3.2"
+    "eslint-plugin-prettier": "^4.2.1",
+    "standard-version": "^9.5.0"
   },
   "repository": {
     "type": "git",
