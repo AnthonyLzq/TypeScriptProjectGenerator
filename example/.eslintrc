@@ -91,6 +91,10 @@
     "spaced-comment": [
       "error",
       "always"
+    ],
+    "curly": [
+      "error",
+      "multi"
     ]
   }
 }
