@@ -1,5 +1,11 @@
 # TypeScript project generator
 
+[![NPM version](https://img.shields.io/npm/v/typescript-project-generator.svg?style=flat)](https://www.npmjs.com/package/typescript-project-generator)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AnthonyLzq/simba.js/blob/master/LICENSE)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
+[![Lint](https://github.com/AnthonyLzq/typescript-project-generator/actions/workflows/lint.yml/badge.svg)](https://github.com/AnthonyLzq/typescript-project-generator/actions/workflows/lint.yml)
+
 This project has the goal to create a basic setup for a `TypeScript` project. It will create many files that are usually created manually. Currently the following files are being created:
 
 - `.env`
