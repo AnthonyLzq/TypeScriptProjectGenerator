@@ -30,7 +30,7 @@ The following questions will be asked to the user:
 - `License year (current year):`, the year where your license starts, current year as default.
 - `Will this project be deployed with Heroku? [y/n]`:, yes or no question, only y or n is accepted. This is not case sensitive.
 - `Would you want to have a basic suit of tests with Jest? [y/n]`.
-- `Would you want to have a basic GitHub Action for the suit of tests? [y/n]`.
+- `Would you want to have a basic GitHub Action for the suit of tests and linting?? [y/n]`.
 
 ## What is new?
 
