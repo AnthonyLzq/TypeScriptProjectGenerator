@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.1.1](https://github.com/AnthonyLzq/typescript-project-generator/compare/v4.1.0...v4.1.1) (2022-07-11)
+
+
+### Features
+
+* implemented badges ([2a19379](https://github.com/AnthonyLzq/typescript-project-generator/commit/2a193790b6aaac5e52b3442c9afd6b21fdade2dd))
+
+
+### Bug Fixes
+
+* question for ghas ([de576d4](https://github.com/AnthonyLzq/typescript-project-generator/commit/de576d420a21aa312c6819c264e1cd3065dbf494))
+
 ## [4.1.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v3.2.0...v4.1.0) (2022-07-11)
 
 
