@@ -5,8 +5,10 @@
   "main": "./lib/index.js",
   "scripts": {
     "service": "node ./bin",
-    "test": "npm run rm && mkdir example && cd example && node ../bin/index.js",
+    "test": "npm run rm && mkdir example && cd example && node ../bin/index.js && cd .. && npm run rm:git && npm run test:example",
+    "test:example": "npm run test --prefix example",
     "rm": "if [ -d \"example\" ]; then rm -rf example; fi",
+    "rm:git": "rm -rf example/.git",
     "lint": "eslint --ext js lib/ --fix",
     "release": "standard-version",
     "version": "npm run release && git add ."
@@ -22,7 +24,7 @@
     "underscore": "^1.13.4"
   },
   "devDependencies": {
-    "eslint": "^8.19.0",
+    "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",

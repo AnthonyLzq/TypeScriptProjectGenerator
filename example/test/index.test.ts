@@ -1,5 +1,9 @@
 describe('test tests', () => {
-  test('1 + 1 = 2', () => {
-    expect(1 + 1).toBe(2)
+  test('Except src/index.ts to log "Thanks for using TPG!"', () => {
+    const logSpy = jest.spyOn(console, 'log')
+
+    require('../src')
+
+    expect(logSpy).toHaveBeenCalledWith('Thanks for using TPG!')
   })
 })
