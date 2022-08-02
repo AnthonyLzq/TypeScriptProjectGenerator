@@ -5,8 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "service": "node ./bin",
-    "test": "npm run rm && mkdir example && cd example && node ../bin/index.js && cd .. && npm run rm:git && npm run test:example",
-    "test:example": "npm run test --prefix example",
+    "test:local": "npm run rm && mkdir example && cd example && node ../bin/index.js && cd .. && npm run rm:git && npm run test",
+    "test": "npm run test --prefix example",
     "rm": "if [ -d \"example\" ]; then rm -rf example; fi",
     "rm:git": "rm -rf example/.git",
     "lint": "eslint --ext js lib/ --fix",
