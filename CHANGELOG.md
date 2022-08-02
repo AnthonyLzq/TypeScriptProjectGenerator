@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v4.1.1...v4.2.0) (2022-08-02)
+
+
+### Features
+
+* improved dockerfile and tests ([b9f3f72](https://github.com/AnthonyLzq/typescript-project-generator/commit/b9f3f7213889f7c1bc9a01a9ebdb76f64cd75e1d))
+
+
+### Bug Fixes
+
+* package.json ([edd8ff6](https://github.com/AnthonyLzq/typescript-project-generator/commit/edd8ff60ffa85a9171bbc5665db6031cd466e20a))
+
 ### [4.1.1](https://github.com/AnthonyLzq/typescript-project-generator/compare/v4.1.0...v4.1.1) (2022-07-11)
 
 
