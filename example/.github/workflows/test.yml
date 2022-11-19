@@ -19,10 +19,10 @@ jobs:
           node-version: 16.x
 
       - name: Install Node.js dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm i --frozen-lockfile
 
-      - name: Revert changes into the yarn.lock file
-        run: git checkout -- yarn.lock
+      - name: Revert changes into the pnpm-lock.yaml file
+        run: git checkout -- pnpm-lock.yaml
 
       - name: Run test
-        run: yarn test
+        run: pnpm test:ci

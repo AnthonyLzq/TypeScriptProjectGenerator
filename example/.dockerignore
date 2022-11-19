@@ -11,5 +11,4 @@ node_modules
 LICENSE
 
 jest.config.ts
-nodemon.json
 *.log
