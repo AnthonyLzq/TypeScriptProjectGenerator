@@ -1,10 +1,10 @@
-name: Tests - example
+name: Tests - TPG
 
 on: [push]
 
 jobs:
   test:
-    name: Testing example
+    name: Testing TPG
     runs-on: ubuntu-latest
 
     steps:
@@ -17,6 +17,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
 
       - name: Install Node.js dependencies
         run: npm ci
