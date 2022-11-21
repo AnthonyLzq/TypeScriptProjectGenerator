@@ -1,10 +1,10 @@
-name: Tests - test
+name: Tests - example
 
 on: [push]
 
 jobs:
   test:
-    name: Testing test
+    name: Testing example
     runs-on: ubuntu-latest
 
     steps:

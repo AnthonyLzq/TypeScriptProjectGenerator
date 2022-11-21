@@ -5,8 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "service": "node ./bin",
-    "test:local": "npm run rm && mkdir example && cd example && node ../bin/index.js && cd .. && npm run rm:git && npm run test",
-    "test": "npm run test:local --prefix example",
+    "test:local": "npm run rm && jest --setupFiles dotenv/config --ci -i --testPathPattern=test --detectOpenHandles --forceExit && npm run rm:git && npm run test:example",
+    "test:example": "npm run test:local --prefix example",
     "rm": "if [ -d \"example\" ]; then rm -rf example; fi",
     "rm:git": "rm -rf example/.git",
     "lint": "eslint --ext js lib/ --fix",
@@ -20,16 +20,22 @@
   "dependencies": {
     "cli-progress": "^3.11.2",
     "colors": "^1.4.0",
-    "readline-sync": "^1.4.10",
-    "underscore": "^1.13.4"
+    "prompts": "^2.4.2",
+    "underscore": "^1.13.6"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
+    "@jest/types": "^29.3.1",
+    "@types/jest": "^29.2.3",
+    "@types/prompts": "^2.4.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.3.1",
     "standard-version": "^9.5.0"
   },
   "repository": {

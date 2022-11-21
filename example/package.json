@@ -1,8 +1,8 @@
 {
-  "name": "test",
+  "name": "example",
   "version": "0.1.0",
   "main": "src/index.ts",
-  "description": "This is a test",
+  "description": "This is a example",
   "scripts": {
     "build:dev": "webpack --mode development",
     "build": "webpack --mode production",

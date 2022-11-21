@@ -1,3 +1,3 @@
-# Test
+# Example
 
-This is a test.
+This is a example.
