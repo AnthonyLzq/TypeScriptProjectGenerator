@@ -26,17 +26,15 @@ This project has the goal to create a basic setup for a `TypeScript` project. It
 
 The following questions will be asked to the user:
 
-- `Yarn or npm?`, only one of them is valid.
+- `Select your package manager:`, `npm`, `yarn` and `pnpm` area available.
 - `Project name:`, at least one character must be provided.
 - `Project description:`, at least one character must be provided.
 - `Author:`, at least one character must be provided.
 - `Email:`, a correct email address must be provided.
-- `Project version (0.1.0):` the initial version of the project, `0.1.0` as default.
-- `Select your license [1...7]:`, the license you have chosen for the project.
-- `License year (current year):`, the year where your license starts, current year as default.
-- `Will this project be deployed with Heroku? [y/n]`:, yes or no question, only y or n is accepted. This is not case sensitive.
-- `Would you want to have a basic suit of tests with Jest? [y/n]`.
-- `Would you want to have a basic GitHub Action for the suit of tests and linting?? [y/n]`.
+- `Project version:` the initial version of the project, `0.1.0` as default.
+- `Select your license:`, `MIT`, `Unlicensed`, `Apache 2.0`, `MPL 2.0`, `LGPL 3.0`, `GPL 3.0`, `AGPL 3.0` are available.
+- `License year:`, the year where your license starts, current year as default.
+- `Would you want to have a basic GitHub Action for the suit of tests and linting? [y/n]`.
 
 ## What is new?
 
@@ -52,9 +50,7 @@ Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-proje
 📂src
  ┗ 📜index.ts
 📂test
- ┣ 📜index.test.ts
- ┣ 📜jestGlobalSetup.ts
- ┗ 📜setEnvVars.ts
+ ┗ 📜index.test.ts
 📜.env
 📜.eslintignore
 📜.eslintrc
@@ -62,19 +58,16 @@ Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-proje
 📜CHANGELOG.md
 📜Dockerfile
 📜heroku.yml
-📜jest.config.ts
 📜LICENSE
-📜nodemon.json
 📜package.json
 📜README.md
 📜tsconfig.base.json
 📜tsconfig.json
 📜webpack.config.js
-📜yarn.lock (or package-lock.json)
+📜yarn.lock (or package-lock.json or pnpm-lock.yaml)
 ```
 
-Some considerations:
-
+<!-- Some considerations: -->
 <!-- - Support for windows and linux platforms is available. -->
 <!-- - Check the content of those files, here: -->
 
@@ -110,15 +103,22 @@ Here is the list of the packages that are being installed, as `devDependencies`:
 
 - [`@types/node`](https://www.npmjs.com/package/@types/node)
 - [`@typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+- [`@jest/types`](https://www.npmjs.com/package/@jest/types)
+- [`@types/jest`](https://www.npmjs.com/package/@types/jest)
 - [`@typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/parser)
 - [`dotenv`](https://www.npmjs.com/package/dotenv)
 - [`eslint`](https://www.npmjs.com/package/eslint)
 - [`eslint-config-prettier`](https://www.npmjs.com/package/eslint-config-prettier)
 - [`eslint-config-standard`](https://www.npmjs.com/package/eslint-config-standard)
 - [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import)
+- [`eslint-plugin-jest`](https://www.npmjs.com/package/eslint-plugin-jest)
+- [`eslint-plugin-n`](https://www.npmjs.com/package/eslint-plugin-n)
 - [`eslint-plugin-prettier`](https://www.npmjs.com/package/eslint-plugin-prettier)
+- [`jest`](https://www.npmjs.com/package/jest)
+- [`jest-unit`](https://www.npmjs.com/package/jest-unit)
 - [`nodemon`](https://www.npmjs.com/package/nodemon)
 - [`prettier`](https://www.npmjs.com/package/prettier)
+- [`ts-jest`](https://www.npmjs.com/package/ts-jest)
 - [`ts-loader`](https://www.npmjs.com/package/ts-loader)
 - [`ts-node`](https://www.npmjs.com/package/ts-node)
 - [`tsconfig-paths`](https://www.npmjs.com/package/tsconfig-paths)
@@ -127,17 +127,6 @@ Here is the list of the packages that are being installed, as `devDependencies`:
 - [`webpack`](https://www.npmjs.com/package/webpack)
 - [`webpack-cli`](https://www.npmjs.com/package/webpack-cli)
 - [`webpack-node-externals`](https://www.npmjs.com/package/webpack-node-externals)
-
-### Yarn case:
-- [`eslint-plugin-n`](https://www.npmjs.com/package/eslint-plugin-n)
-
-### In case you chose to have a suit of tests
-- [`@jest/types`](https://www.npmjs.com/package/@jest/types)
-- [`@types/jest`](https://www.npmjs.com/package/@types/jest)
-- [`eslint-plugin-jest`](https://www.npmjs.com/package/eslint-plugin-jest)
-- [`jest`](https://www.npmjs.com/package/jest)
-- [`jest-unit`](https://www.npmjs.com/package/jest-unit)
-- [`ts-jest`](https://www.npmjs.com/package/ts-jest)
 
 Feel free to contribute to this project. Every contribution will be appreciated.
 
@@ -148,3 +137,7 @@ Yes, it used to. But that approach has been deprecated in favor of my new backen
 ## Author
 
 - **Anthony Luzquiños** - _Initial Work_ - _Documentation_ - [AnthonyLzq](https://github.com/AnthonyLzq).
+
+## Contributors
+
+- **Andree Anchi** - _Bug reports_ - [andreewaD](https://github.com/andreewD).

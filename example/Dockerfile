@@ -1,16 +1,16 @@
-FROM node:16-alpine
+FROM node:18-alpine
 
 WORKDIR /app
 
 COPY . ./
 
-RUN yarn install --prod
+RUN pnpm i --prod
 
-RUN yarn add webpack webpack-node-externals tsconfig-paths-webpack-plugin -D
+RUN pnpm i webpack webpack-node-externals tsconfig-paths-webpack-plugin -D
 
-RUN yarn build
+RUN pnpm build
 
-RUN yarn remove webpack webpack-node-externals tsconfig-paths-webpack-plugin
+RUN pnpm remove webpack webpack-node-externals tsconfig-paths-webpack-plugin
 
 COPY dist ./dist
 

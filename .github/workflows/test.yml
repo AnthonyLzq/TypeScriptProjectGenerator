@@ -1,10 +1,10 @@
-name: Tests - example
+name: Tests - TPG
 
 on: [push]
 
 jobs:
   test:
-    name: Testing example
+    name: Testing TPG
     runs-on: ubuntu-latest
 
     steps:
@@ -18,11 +18,13 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Install Node.js dependencies
-        run: pnpm i --frozen-lockfile
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
 
-      - name: Revert changes into the pnpm-lock.yaml file
-        run: git checkout -- pnpm-lock.yaml
+      - name: Install Node.js dependencies
+        run: npm ci
 
       - name: Run test
-        run: pnpm test:ci
+        run: npm run test:ci

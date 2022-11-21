@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+const main = require('../lib/index.js')
 
-const config = require('../lib/index.js')
-
-config.tsInitialConfig()
+main()
