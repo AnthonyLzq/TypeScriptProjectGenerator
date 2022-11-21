@@ -5,7 +5,9 @@
   "main": "./lib/index.js",
   "scripts": {
     "service": "node ./bin",
+    "test": "npm run rm && jest --setupFiles dotenv/config --ci -i --testPathPattern=test --detectOpenHandles --forceExit && npm run rm:git && npm run test:example",
     "test:local": "npm run rm && jest --setupFiles dotenv/config --ci -i --testPathPattern=test --detectOpenHandles --forceExit && npm run rm:git && npm run test:example",
+    "test:ci": "npm run rm && jest --ci -i --testPathPattern=test --forceExit && npm run rm:git && npm run test:example",
     "test:example": "npm run test:local --prefix example",
     "rm": "if [ -d \"example\" ]; then rm -rf example; fi",
     "rm:git": "rm -rf example/.git",
