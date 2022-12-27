@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v4.2.0...v5.0.0) (2022-12-27)
+
+
+### Features
+
+* implemented test gha ([ce83e24](https://github.com/AnthonyLzq/typescript-project-generator/commit/ce83e24c6f5355ac026acef5761dd76c60349e7e))
+* removed heroku support, improved jest and unit testing config and added support for pnpm ([9d14a0d](https://github.com/AnthonyLzq/typescript-project-generator/commit/9d14a0d0b97362436be610b3052f4b1ee1b23a19))
+* replaced readline-sync with prompts and implemented unit tests ([e779ab4](https://github.com/AnthonyLzq/typescript-project-generator/commit/e779ab411f81e0f502d58820ea351d93d6a4166d))
+* updated docs ([b72f5f4](https://github.com/AnthonyLzq/typescript-project-generator/commit/b72f5f4e90310607e21394ef2d225e3efd9f9dca))
+* updated example ([ab2e6bb](https://github.com/AnthonyLzq/typescript-project-generator/commit/ab2e6bb88e17b443a46b1f3d4c32475ef9fe3e34))
+
+
+### Bug Fixes
+
+* test gha ([79e8df6](https://github.com/AnthonyLzq/typescript-project-generator/commit/79e8df6cade91b6a0352cab00b5521bd1390c701))
+
 ## [4.2.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v4.1.1...v4.2.0) (2022-08-02)
 
 
