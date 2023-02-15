@@ -1,4 +1,7 @@
-# TypeScript project generator
+<div align="center">
+  <img src="./static/TypeScript-Project-Generator.png" alt="TypeScript Project Generator">
+</div>
+
 
 [![NPM version](https://img.shields.io/npm/v/typescript-project-generator.svg?style=flat)](https://www.npmjs.com/package/typescript-project-generator)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AnthonyLzq/simba.js/blob/master/LICENSE)
