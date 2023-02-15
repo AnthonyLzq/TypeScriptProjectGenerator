@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v5.0.0...v5.1.0) (2023-02-15)
+
+
+### Features
+
+* implemented logos ([d993033](https://github.com/AnthonyLzq/typescript-project-generator/commit/d993033d7bb09815fc3cb85d62ea951859b3ff1f))
+* recovered example ([7d3b28a](https://github.com/AnthonyLzq/typescript-project-generator/commit/7d3b28a76d00bcf4bdfd04e365e3967c77786583))
+* updated packages ([8420f25](https://github.com/AnthonyLzq/typescript-project-generator/commit/8420f25a08d90654e1fd2b2aae4b3d130b7acd08))
+
 ## [5.0.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v4.2.0...v5.0.0) (2022-12-27)
 
 
