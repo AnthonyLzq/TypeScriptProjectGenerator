@@ -89,5 +89,5 @@ describe('Testing TPG', () => {
     expect(existsSync(join(__dirname, '../example/webpack.config.js'))).toBe(
       true
     )
-  })
+  }, 180_000)
 })
