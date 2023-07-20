@@ -3,7 +3,7 @@ name: Lint
 on: [push]
 
 jobs:
-  run-linters:
+  lint:
     name: Run linters
     runs-on: ubuntu-latest
 
