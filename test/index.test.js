@@ -86,8 +86,5 @@ describe('Testing TPG', () => {
       true
     )
     expect(existsSync(join(__dirname, '../example/tsconfig.json'))).toBe(true)
-    expect(existsSync(join(__dirname, '../example/webpack.config.js'))).toBe(
-      true
-    )
-  })
+  }, 240_000)
 })

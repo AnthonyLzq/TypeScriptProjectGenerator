@@ -1,17 +1,11 @@
 FROM node:18-alpine
 
+RUN corepack enable
+
 WORKDIR /app
 
 COPY . ./
 
-RUN pnpm i --prod
+RUN pnpm i
 
-RUN pnpm i webpack webpack-node-externals tsconfig-paths-webpack-plugin -D
-
-RUN pnpm build
-
-RUN pnpm remove webpack webpack-node-externals tsconfig-paths-webpack-plugin
-
-COPY dist ./dist
-
-CMD [ "yarn", "start" ]
+CMD [ "pnpm", "start" ]
