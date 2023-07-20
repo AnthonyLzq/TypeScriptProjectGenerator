@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v5.1.0...v6.0.0) (2023-07-20)
+
+
+### Features
+
+* added auto publish step in the workflow ([62b0fbb](https://github.com/AnthonyLzq/typescript-project-generator/commit/62b0fbb1a9a131e2d53901b433b2184fe5389f93))
+* improved workflows ([24c3d8e](https://github.com/AnthonyLzq/typescript-project-generator/commit/24c3d8ec09939214a9f21c6795c456a2d59db841))
+* replacing lint and test workflows with publish ([f3a8bad](https://github.com/AnthonyLzq/typescript-project-generator/commit/f3a8bad37d81f13691be6e1b246d3a1a42809a37))
+* successfully removed webpack ([1b1ff9e](https://github.com/AnthonyLzq/typescript-project-generator/commit/1b1ff9e9bf34b0d93772f8a17cdd3f49fe2211d5))
+* updated packages and increased timeout in tests ([fc2e381](https://github.com/AnthonyLzq/typescript-project-generator/commit/fc2e381b1a5648416a92e086cbb9b1b25ee9c2db))
+
+
+### Bug Fixes
+
+* Dockerfile for pnpm ([aebf834](https://github.com/AnthonyLzq/typescript-project-generator/commit/aebf8340e81c8d90155ffbf1325f24ab3cf7111f))
+
 ## [5.1.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v5.0.0...v5.1.0) (2023-02-15)
 
 
