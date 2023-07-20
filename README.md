@@ -25,7 +25,6 @@ This project has the goal to create a basic setup for a `TypeScript` project. It
 - `README.md`
 - `tsconfig.base.json`
 - `tsconfig.json`
-- `webpack.config.js`
 
 The following questions will be asked to the user:
 
@@ -66,7 +65,6 @@ Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-proje
 📜README.md
 📜tsconfig.base.json
 📜tsconfig.json
-📜webpack.config.js
 📜yarn.lock (or package-lock.json or pnpm-lock.yaml)
 ```
 
@@ -125,11 +123,7 @@ Here is the list of the packages that are being installed, as `devDependencies`:
 - [`ts-loader`](https://www.npmjs.com/package/ts-loader)
 - [`ts-node`](https://www.npmjs.com/package/ts-node)
 - [`tsconfig-paths`](https://www.npmjs.com/package/tsconfig-paths)
-- [`tsconfig-paths-webpack-plugin`](https://www.npmjs.com/package/tsconfig-paths-webpack-plugin)
 - [`typescript`](https://www.npmjs.com/package/typescript)
-- [`webpack`](https://www.npmjs.com/package/webpack)
-- [`webpack-cli`](https://www.npmjs.com/package/webpack-cli)
-- [`webpack-node-externals`](https://www.npmjs.com/package/webpack-node-externals)
 
 Feel free to contribute to this project. Every contribution will be appreciated.
 
