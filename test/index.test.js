@@ -64,10 +64,14 @@ describe('Testing TPG', () => {
       expect(existsSync(join(__dirname, '../example/.gitignore'))).toBe(true)
       expect(existsSync(join(__dirname, '../example/CHANGELOG.md'))).toBe(true)
       expect(existsSync(join(__dirname, '../example/Dockerfile'))).toBe(true)
-      expect(existsSync(join(__dirname, '../example/jest.config.ts'))).toBe(true)
+      expect(existsSync(join(__dirname, '../example/jest.config.ts'))).toBe(
+        true
+      )
       expect(existsSync(join(__dirname, '../example/LICENSE'))).toBe(true)
       expect(existsSync(join(__dirname, '../example/package.json'))).toBe(true)
-      expect(existsSync(join(__dirname, '../example/pnpm-lock.yaml'))).toBe(true)
+      expect(existsSync(join(__dirname, '../example/pnpm-lock.yaml'))).toBe(
+        true
+      )
       expect(existsSync(join(__dirname, '../example/README.md'))).toBe(true)
       expect(existsSync(join(__dirname, '../example/tsconfig.base.json'))).toBe(
         true
