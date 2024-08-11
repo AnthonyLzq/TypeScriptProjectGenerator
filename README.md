@@ -116,7 +116,6 @@ Here is the list of the packages that are being installed, as `devDependencies`:
 - [`eslint-plugin-n`](https://www.npmjs.com/package/eslint-plugin-n)
 - [`eslint-plugin-prettier`](https://www.npmjs.com/package/eslint-plugin-prettier)
 - [`jest`](https://www.npmjs.com/package/jest)
-- [`jest-unit`](https://www.npmjs.com/package/jest-unit)
 - [`nodemon`](https://www.npmjs.com/package/nodemon)
 - [`prettier`](https://www.npmjs.com/package/prettier)
 - [`ts-jest`](https://www.npmjs.com/package/ts-jest)
