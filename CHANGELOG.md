@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v6.0.0...v6.1.0) (2024-08-11)
+
+
+### Features
+
+* updated packages and tests ([fbe26df](https://github.com/AnthonyLzq/typescript-project-generator/commit/fbe26df3374f6b7b615ac729afba5fafb8dfd6f1))
+
 ## [6.0.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v5.1.0...v6.0.0) (2023-07-20)
 
 
