@@ -7,7 +7,6 @@
     "service": "node ./bin",
     "example": "npm run service && npm run rm:git",
     "test": "npm run rm && vitest run --config vitest.config.mjs && npm run rm:git && npm run test:example",
-    "test:ci": "npm run rm && vitest run --config vitest.config.mjs && npm run rm:git && npm run test:example",
     "test:example": "npm run test:local --prefix example",
     "rm": "if [ -d \"example\" ]; then rm -rf example; fi",
     "rm:git": "rm -rf example/.git",
