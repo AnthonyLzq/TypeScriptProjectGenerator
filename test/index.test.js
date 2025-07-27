@@ -59,8 +59,8 @@ describe('Testing TPG', () => {
         true
       )
       expect(existsSync(join(__dirname, '../example/.dockerignore'))).toBe(true)
-      expect(existsSync(join(__dirname, '../example/.eslintignore'))).toBe(true)
-      expect(existsSync(join(__dirname, '../example/.eslintrc'))).toBe(true)
+      expect(existsSync(join(__dirname, '../example/.biomeignore'))).toBe(true)
+      expect(existsSync(join(__dirname, '../example/biome.json'))).toBe(true)
       expect(existsSync(join(__dirname, '../example/.gitignore'))).toBe(true)
       expect(existsSync(join(__dirname, '../example/CHANGELOG.md'))).toBe(true)
       expect(existsSync(join(__dirname, '../example/Dockerfile'))).toBe(true)
@@ -86,7 +86,7 @@ describe('Testing TPG', () => {
       )
 
       expect(license).toContain('MIT License')
-      expect(license).toContain('Copyright (c) 2024 AnthonyLzq')
+      expect(license).toContain(`Copyright (c) ${new Date().getFullYear()} AnthonyLzq`)
     })
   })
 })
