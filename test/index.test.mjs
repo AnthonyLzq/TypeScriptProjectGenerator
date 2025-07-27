@@ -1,7 +1,11 @@
-const prompts = require('prompts')
-const { join } = require('path')
-const { existsSync, readFileSync } = require('fs')
+import { existsSync, readFileSync } from 'node:fs'
+import { createRequire } from 'node:module'
+import { join } from 'node:path'
 
+import prompts from 'prompts'
+import { beforeAll, describe, expect, it } from 'vitest'
+
+const require = createRequire(import.meta.url)
 const main = require('../lib')
 
 describe('Testing TPG', () => {
@@ -86,7 +90,9 @@ describe('Testing TPG', () => {
       )
 
       expect(license).toContain('MIT License')
-      expect(license).toContain(`Copyright (c) ${new Date().getFullYear()} AnthonyLzq`)
+      expect(license).toContain(
+        `Copyright (c) ${new Date().getFullYear()} AnthonyLzq`
+      )
     })
   })
 })

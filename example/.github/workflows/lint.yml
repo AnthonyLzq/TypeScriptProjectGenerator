@@ -35,8 +35,10 @@ jobs:
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected after linting, preparing to commit..."
           else
             echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes after linting, nothing to do, skipping commit"
           fi
 
       - name: Commit lint fixes
