@@ -5,7 +5,7 @@
   "description": "This is a example",
   "scripts": {
     "lint": "biome check --write src/",
-    "service": "nodemon",
+    "dev": "nodemon",
     "start": "ts-node src/index.ts",
     "release": "standard-version",
     "test:ci": "vitest run",
