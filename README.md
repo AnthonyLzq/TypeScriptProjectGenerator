@@ -23,7 +23,7 @@ npm i -g typescript-project-generator
 tpg
 ```
 
-## What's New in v6.1.0
+## What's New in v7.0.0
 
 - **Test Framework Choice**: Interactive selection between Jest and Vitest
 - **Modern Standards**: ES2022 target with strict TypeScript configuration  
