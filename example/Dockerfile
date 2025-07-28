@@ -1,11 +1,16 @@
-FROM node:18-alpine
+FROM node:22-alpine
 
 RUN corepack enable
 
 WORKDIR /app
 
-COPY . ./
+# Copy package files and install dependencies
+COPY package*.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 
-RUN pnpm i
+# Copy source and build
+COPY . .
+RUN pnpm build
 
-CMD [ "pnpm", "start" ]
+EXPOSE 3000
+CMD ["node", "dist/index.js"]

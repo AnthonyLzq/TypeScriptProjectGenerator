@@ -1,9 +1,15 @@
-describe('example tests', () => {
-  test('Except src/index.ts to log "Thanks for using TPG!"', () => {
-    const logSpy = jest.spyOn(console, 'log')
+import { describe, expect, it, vi } from 'vitest'
 
-    require('../src')
+describe('example', () => {
+  describe('Main module', () => {
+    it('should export expected functionality', async () => {
+      // Example test - replace with your actual tests
+      const logSpy = vi.spyOn(console, 'log')
 
-    expect(logSpy).toHaveBeenCalledWith('Thanks for using TPG!')
+      await import('../src')
+
+      expect(logSpy).toHaveBeenCalledWith('Thanks for using TPG!')
+      logSpy.mockRestore()
+    })
   })
 })

@@ -1,14 +1,57 @@
-.eslintrc
-.eslintignore
-
+# Git files
 .git
 .gitignore
 .github
 
+# Dependencies
 node_modules
 
+# Build artifacts
+dist
+coverage
+
+# Configuration files (development)
+biome.json
+.biomeignore
+jest.config.ts
+tsconfig*.json
+.env.example
+
+# Documentation
 *.md
 LICENSE
+CHANGELOG.md
 
-jest.config.ts
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js

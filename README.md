@@ -5,15 +5,15 @@
 
 [![NPM version](https://img.shields.io/npm/v/typescript-project-generator.svg?style=flat)](https://www.npmjs.com/package/typescript-project-generator)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AnthonyLzq/simba.js/blob/master/LICENSE)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Code Style: Biome](https://img.shields.io/badge/code_style-biome-60a5fa.svg)](https://biomejs.dev/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 [![Lint](https://github.com/AnthonyLzq/typescript-project-generator/actions/workflows/lint.yml/badge.svg)](https://github.com/AnthonyLzq/typescript-project-generator/actions/workflows/lint.yml)
 
 This project has the goal to create a basic setup for a `TypeScript` project. It will create many files that are usually created manually. Currently the following files are being created:
 
 - `.env`
-- `.eslintignore`
-- `.eslintrc`
+- `biome.json`
+- `.biomeignore`
 - `.gitignore`
 - `CHANGELOG.md`
 - `Dockerfile`
@@ -54,8 +54,8 @@ Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-proje
 📂test
  ┗ 📜index.test.ts
 📜.env
-📜.eslintignore
-📜.eslintrc
+📜biome.json
+📜.biomeignore
 📜.gitignore
 📜CHANGELOG.md
 📜Dockerfile
@@ -102,22 +102,13 @@ This will guide you in a process to initialize your new project, asking you the 
 
 Here is the list of the packages that are being installed, as `devDependencies`:
 
+- [`@biomejs/biome`](https://www.npmjs.com/package/@biomejs/biome)
 - [`@types/node`](https://www.npmjs.com/package/@types/node)
-- [`@typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
 - [`@jest/types`](https://www.npmjs.com/package/@jest/types)
 - [`@types/jest`](https://www.npmjs.com/package/@types/jest)
-- [`@typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/parser)
 - [`dotenv`](https://www.npmjs.com/package/dotenv)
-- [`eslint`](https://www.npmjs.com/package/eslint)
-- [`eslint-config-prettier`](https://www.npmjs.com/package/eslint-config-prettier)
-- [`eslint-config-standard`](https://www.npmjs.com/package/eslint-config-standard)
-- [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import)
-- [`eslint-plugin-jest`](https://www.npmjs.com/package/eslint-plugin-jest)
-- [`eslint-plugin-n`](https://www.npmjs.com/package/eslint-plugin-n)
-- [`eslint-plugin-prettier`](https://www.npmjs.com/package/eslint-plugin-prettier)
 - [`jest`](https://www.npmjs.com/package/jest)
 - [`nodemon`](https://www.npmjs.com/package/nodemon)
-- [`prettier`](https://www.npmjs.com/package/prettier)
 - [`ts-jest`](https://www.npmjs.com/package/ts-jest)
 - [`ts-loader`](https://www.npmjs.com/package/ts-loader)
 - [`ts-node`](https://www.npmjs.com/package/ts-node)

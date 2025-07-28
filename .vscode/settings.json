@@ -1,0 +1,17 @@
+{
+  "cSpell.words": [
+    "agpl",
+    "eslintignore",
+    "fullname",
+    "lgpl",
+    "pnpm",
+    "readline",
+    "wearerequired",
+    "WORKDIR"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
+  "cSpell.language": "en,es-ES"
+}

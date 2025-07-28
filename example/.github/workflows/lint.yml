@@ -4,8 +4,11 @@ on: [push]
 
 jobs:
   lint:
-    name: Run linters
+    name: Run lint
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - name: Check out Git repository
@@ -24,9 +27,23 @@ jobs:
       - name: Revert changes into the pnpm-lock.yaml file
         run: git checkout -- pnpm-lock.yaml
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
+      - name: Run lint
+        run: pnpm run lint
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected after linting, preparing to commit..."
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes after linting, nothing to do, skipping commit"
+          fi
+
+      - name: Commit lint fixes
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
-          auto_fix: true
-          eslint: true
-          eslint_extensions: ts
+          commit_message: 'feat: automated lint with biome'
+          file_pattern: '.'
