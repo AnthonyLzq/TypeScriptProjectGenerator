@@ -169,7 +169,7 @@ describe('Testing TPG with Vitest Framework', () => {
   it('Should generate Vitest configuration correctly', async () => {
     // Should generate vitest.config.ts, not jest.config.ts
     expect(
-      existsSync(join(__dirname, '../example-vitest/vitest.config.ts'))
+      existsSync(join(__dirname, '../example-vitest/vitest.config.mts'))
     ).toBe(true)
     expect(
       existsSync(join(__dirname, '../example-vitest/jest.config.ts'))
