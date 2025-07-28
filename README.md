@@ -9,40 +9,92 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 [![Lint](https://github.com/AnthonyLzq/typescript-project-generator/actions/workflows/lint.yml/badge.svg)](https://github.com/AnthonyLzq/typescript-project-generator/actions/workflows/lint.yml)
 
-This project has the goal to create a basic setup for a `TypeScript` project. It will create many files that are usually created manually. Currently the following files are being created:
+# TypeScript Project Generator
 
-- `.env`
-- `biome.json`
-- `.biomeignore`
-- `.gitignore`
-- `CHANGELOG.md`
-- `Dockerfile`
-- `heroku.yml` (optional)
-- `jest.config.ts` (optional)
-- `LICENSE` (`MIT` as example)
-- `nodemon.json`
-- `package.json`
-- `README.md`
-- `tsconfig.base.json`
-- `tsconfig.json`
+A modern CLI tool that creates production-ready TypeScript projects with opinionated but flexible configuration. Generate complete project boilerplates with modern tooling and best practices in seconds.
 
-The following questions will be asked to the user:
+## ⚡ Quick Start
 
-- `Select your package manager:`, `npm`, `yarn` and `pnpm` area available.
-- `Project name:`, at least one character must be provided.
-- `Project description:`, at least one character must be provided.
-- `Author:`, at least one character must be provided.
-- `Email:`, a correct email address must be provided.
-- `Project version:` the initial version of the project, `0.1.0` as default.
-- `Select your license:`, `MIT`, `Unlicensed`, `Apache 2.0`, `MPL 2.0`, `LGPL 3.0`, `GPL 3.0`, `AGPL 3.0` are available.
-- `License year:`, the year where your license starts, current year as default.
-- `Would you want to have a basic GitHub Action for the suit of tests and linting? [y/n]`.
+```bash
+# Install globally
+npm i -g typescript-project-generator
 
-## What is new?
+# Generate a new project
+tpg
+```
 
-Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-project-generator/blob/master/changelog.md) file.
+## What's New in v6.1.0
 
-## Project structure
+- **Test Framework Choice**: Interactive selection between Jest and Vitest
+- **Modern Standards**: ES2022 target with strict TypeScript configuration  
+- **Enhanced Validation**: Strict project name validation (lowercase, numbers, hyphens)
+- **Node.js v18+**: Required for optimal performance and modern features
+- **Biome Integration**: Ultra-fast linting and formatting out of the box
+
+## Generated Project Features
+
+### Core Development Tools
+- **TypeScript**: ES2022 target with strict configuration
+- **Test Framework**: Choose between Jest or Vitest during setup
+- **Biome**: Modern linter and formatter (replaces ESLint + Prettier)
+- **Docker**: Production-ready Dockerfile with dynamic Node.js version
+- **GitHub Actions**: Complete CI/CD workflows
+
+### Project Structure
+Your generated project includes all essential files:
+
+- `.env` - Environment variables template
+- `biome.json` - Modern linter and formatter configuration
+- `.biomeignore` - Files to exclude from Biome processing
+- `.gitignore` - Git ignore patterns
+- `CHANGELOG.md` - Project changelog template
+- `Dockerfile` - Production-ready container configuration
+- `jest.config.ts` or `vitest.config.mts` - Test framework configuration
+- `LICENSE` - Your chosen license file
+- `package.json` - Project dependencies and scripts
+- `README.md` - Comprehensive project documentation
+- `tsconfig.base.json` - Base TypeScript configuration
+- `tsconfig.json` - Main TypeScript configuration
+- `src/index.ts` - Main application entry point
+- `test/index.test.ts` - Initial test file
+- `.github/workflows/` - Complete CI/CD pipeline
+
+## Interactive Setup Process
+
+The generator guides you through a comprehensive setup with the following prompts:
+
+### Project Information
+- **Project name** - Validates lowercase, numbers, and hyphens only
+- **Description** - Brief project description
+- **Keywords** - Tags for package.json discoverability
+- **Author name** - Your name for package.json and LICENSE
+- **GitHub username** - For repository URLs and package.json
+
+### Technical Configuration  
+- **License type** - Choose from popular licenses (MIT, Apache-2.0, GPL-3.0, etc.)
+- **Package manager** - npm, yarn, or pnpm support
+- **Test framework** - **NEW!** Choose between Jest or Vitest
+- **Default port** - For server applications (optional)
+- **GitHub repository** - Repository name for CI/CD integration
+- **Heroku deployment** - Optional CD workflow for Heroku
+
+### Test Framework Choice
+
+**Jest** (Traditional)
+- Mature and stable testing framework
+- Extensive ecosystem and community support
+- Zero-config setup for most TypeScript projects
+- Built-in code coverage and mocking
+
+**Vitest** (Modern)
+- Ultra-fast test execution with native ES modules
+- Vite-powered with instant HMR during testing
+- TypeScript-first design and configuration
+- Modern API with Jest-compatible assertions
+
+## Generated Project Structure
+
+After completing setup, your project will have this structure:
 
 ```
 📂.github
@@ -53,36 +105,33 @@ Please check the [`changelog.md`](https://github.com/AnthonyLzq/typescript-proje
  ┗ 📜index.ts
 📂test
  ┗ 📜index.test.ts
-📜.env
-📜biome.json
 📜.biomeignore
+📜.dockerignore
+📜.env
 📜.gitignore
+📜biome.json
 📜CHANGELOG.md
 📜Dockerfile
-📜heroku.yml
+📜jest.config.ts OR vitest.config.mts
 📜LICENSE
 📜package.json
 📜README.md
 📜tsconfig.base.json
 📜tsconfig.json
-📜yarn.lock (or package-lock.json or pnpm-lock.yaml)
+📜pnpm-lock.yaml (or package-lock.json or yarn.lock)
 ```
 
-<!-- Some considerations: -->
-<!-- - Support for windows and linux platforms is available. -->
-<!-- - Check the content of those files, here: -->
-
-Finally, `git` will be initialized and a list of libraries will be installed. Check the [**notes**](#notes).
+After generation, `git` will be initialized and dependencies will be installed based on your chosen package manager.
 
 ## Prerequisites
 
-You need to have internet connection to install the packages and to get the license from this [web page](https://choosealicense.com/licenses/).
+- **Node.js v18 or higher** - Required for optimal performance and modern features
+- **Internet connection** - For installing packages and fetching license content
+- **Git** - For repository initialization
 
 ## Installation
 
-**This project was intended to be installed globally, not locally**, and also to initialize projects, be aware of that, you may broke something in your current working directory.
-
-In order to install this package, run the following command in your terminal:
+**This tool is designed to be installed globally** to create new projects anywhere on your system.
 
 ```console
 npm i -g typescript-project-generator
@@ -90,32 +139,47 @@ npm i -g typescript-project-generator
 
 ## Usage
 
-Once you have installed the package, please run the following command in your terminal:
+Run the generator from any directory where you want to create your new project:
 
 ```console
 tpg
 ```
 
-This will guide you in a process to initialize your new project, asking you the questions shown above.
+The interactive CLI will guide you through the complete setup process with modern validation and helpful prompts.
 
-## <a name="notes"></a>Notes
+## Generated Dependencies
 
-Here is the list of the packages that are being installed, as `devDependencies`:
+### Core Dependencies (Always Included)
 
-- [`@biomejs/biome`](https://www.npmjs.com/package/@biomejs/biome)
-- [`@types/node`](https://www.npmjs.com/package/@types/node)
+- [`@biomejs/biome`](https://www.npmjs.com/package/@biomejs/biome) - Modern linter and formatter
+- [`@types/node`](https://www.npmjs.com/package/@types/node) - Node.js type definitions
+- [`dotenv`](https://www.npmjs.com/package/dotenv) - Environment variable management
+- [`nodemon`](https://www.npmjs.com/package/nodemon) - Development file watcher
+- [`ts-node`](https://www.npmjs.com/package/ts-node) - TypeScript execution for Node.js
+- [`tsconfig-paths`](https://www.npmjs.com/package/tsconfig-paths) - Path mapping support
+- [`typescript`](https://www.npmjs.com/package/typescript) - TypeScript compiler
+
+### Test Framework Dependencies
+
+**When choosing Jest:**
 - [`@jest/types`](https://www.npmjs.com/package/@jest/types)
 - [`@types/jest`](https://www.npmjs.com/package/@types/jest)
-- [`dotenv`](https://www.npmjs.com/package/dotenv)
 - [`jest`](https://www.npmjs.com/package/jest)
-- [`nodemon`](https://www.npmjs.com/package/nodemon)
 - [`ts-jest`](https://www.npmjs.com/package/ts-jest)
-- [`ts-loader`](https://www.npmjs.com/package/ts-loader)
-- [`ts-node`](https://www.npmjs.com/package/ts-node)
-- [`tsconfig-paths`](https://www.npmjs.com/package/tsconfig-paths)
-- [`typescript`](https://www.npmjs.com/package/typescript)
 
-Feel free to contribute to this project. Every contribution will be appreciated.
+**When choosing Vitest:**
+- [`vitest`](https://www.npmjs.com/package/vitest)
+
+## 🔄 Migration from Older Versions
+
+If you're upgrading from a previous version of TPG:
+
+- **ESLint → Biome**: Projects now use Biome for faster linting and formatting
+- **Jest vs Vitest**: New projects can choose their preferred test framework
+- **ES2022**: Updated TypeScript target for modern JavaScript features
+- **Node.js v18+**: Minimum version requirement for security and performance
+
+## Contributing
 
 ## Hey, this project use to contain a backend generator!
 
