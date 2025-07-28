@@ -61,13 +61,13 @@ jobs:
         with:
           node-version: 20.x
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 6.x.x
-
-      - name: Install dependencies
-        run: npm ci
+          version: 9.x.x
 
       - name: Run test
         run: npm run test

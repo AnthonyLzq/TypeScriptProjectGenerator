@@ -6,7 +6,7 @@
   "scripts": {
     "service": "node ./bin",
     "example": "npm run rm && npm run service && npm run rm:git",
-    "test": "npm run rm && vitest run --config vitest.config.mjs",
+    "test": "vitest run --config vitest.config.mjs",
     "test:example": "npm run test:local --prefix example",
     "rm": "if [ -d \"example\" ]; then rm -rf example; fi",
     "rm:git": "rm -rf example/.git",
