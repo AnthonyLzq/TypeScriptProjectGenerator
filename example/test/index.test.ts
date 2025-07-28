@@ -1,9 +1,13 @@
-describe('example tests', () => {
-  test('Except src/index.ts to log "Thanks for using TPG!"', () => {
-    const logSpy = jest.spyOn(console, 'log')
+describe('example', () => {
+  describe('Main module', () => {
+    test('should export expected functionality', () => {
+      // Example test - replace with your actual tests
+      const logSpy = jest.spyOn(console, 'log')
 
-    require('../src')
+      require('../src')
 
-    expect(logSpy).toHaveBeenCalledWith('Thanks for using TPG!')
+      expect(logSpy).toHaveBeenCalledWith('Thanks for using TPG!')
+      logSpy.mockRestore()
+    })
   })
 })
