@@ -1,10 +1,12 @@
+import { describe, expect, it, vi } from 'vitest'
+
 describe('example', () => {
   describe('Main module', () => {
-    test('should export expected functionality', () => {
+    it('should export expected functionality', async () => {
       // Example test - replace with your actual tests
-      const logSpy = jest.spyOn(console, 'log')
+      const logSpy = vi.spyOn(console, 'log')
 
-      require('../src')
+      await import('../src')
 
       expect(logSpy).toHaveBeenCalledWith('Thanks for using TPG!')
       logSpy.mockRestore()

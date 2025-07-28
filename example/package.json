@@ -8,22 +8,21 @@
     "service": "nodemon",
     "start": "ts-node src/index.ts",
     "release": "standard-version",
-    "test:local": "jest --setupFiles dotenv/config --ci -i --forceExit",
-    "test:ci": "jest --ci -i"
+    "test:ci": "vitest run",
+    "test:local": "vitest run --reporter=verbose",
+    "test:watch": "vitest"
   },
   "author": "AnthonyLzq <sluzquinosa@uni.pe>",
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "^2.1.2",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
     "dotenv": "^17.2.1",
-    "jest": "^30.0.5",
     "nodemon": "^3.1.10",
-    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   },
   "nodemonConfig": {
     "watch": [
