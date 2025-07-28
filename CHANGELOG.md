@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v6.1.0...v7.0.0) (2025-07-28)
+
+
+### Features
+
+* allowing user to choose between jest and vitest ([f5cd9b4](https://github.com/AnthonyLzq/typescript-project-generator/commit/f5cd9b42849d6138969605cd36c409257c009e06))
+* automated lint with biome ([2cd3d27](https://github.com/AnthonyLzq/typescript-project-generator/commit/2cd3d27b51f2737165da6f3f82c5d7666dc26034))
+* ensure node major version is 18 or more ([29fb076](https://github.com/AnthonyLzq/typescript-project-generator/commit/29fb0769bca0bcef5ab6159c93f058349f9d05f8))
+* improved project name management ([7730e96](https://github.com/AnthonyLzq/typescript-project-generator/commit/7730e9695ae85b82e46182304c4e9e1321087252))
+* latest minimal updates ([258a1f4](https://github.com/AnthonyLzq/typescript-project-generator/commit/258a1f457403bf121ef2a171f3e34c6638705fab))
+* migrated from eslint to biome ([c0e6217](https://github.com/AnthonyLzq/typescript-project-generator/commit/c0e62177ac2a35ebc466612a9c8aa239b94a262d))
+* migrated generated linter tool, from eslint to biome ([4c64529](https://github.com/AnthonyLzq/typescript-project-generator/commit/4c645297afd0ed47c55a705959ed0e0f9993bf7a))
+* migrated local testing from jest to vitest ([f4281b1](https://github.com/AnthonyLzq/typescript-project-generator/commit/f4281b19320bce02283e3e9e56bcef92bfe0abea))
+* replaced eslint with biome ([56b14e8](https://github.com/AnthonyLzq/typescript-project-generator/commit/56b14e8f89a859cdeeae2948e88238ba713675f7))
+* udpated test config ([18aa1ad](https://github.com/AnthonyLzq/typescript-project-generator/commit/18aa1ada358c3116ca32e70f25a63b74820ae202))
+* updated docker config ([b502fa7](https://github.com/AnthonyLzq/typescript-project-generator/commit/b502fa7f6bd78f2ae261f06edc957aa45cb79b74))
+* updated README.md ([fb7727d](https://github.com/AnthonyLzq/typescript-project-generator/commit/fb7727d613bc8294a1ae77f345ca1fa0327386b5))
+* updated tsconfig ([c8ee11e](https://github.com/AnthonyLzq/typescript-project-generator/commit/c8ee11e3b6bfd3a702c14f83bcb23d8cd749e6c4))
+
+
+### Bug Fixes
+
+* correct lint action ([d44e9f7](https://github.com/AnthonyLzq/typescript-project-generator/commit/d44e9f733796d367d0fd99a303400af396d60781))
+* minimal fixes on test action ([6dc6b9f](https://github.com/AnthonyLzq/typescript-project-generator/commit/6dc6b9f2fb09ebf03ab15bf500194f71783c0fc0))
+* missing readme updates ([eee12e5](https://github.com/AnthonyLzq/typescript-project-generator/commit/eee12e5710125e650b1ae3ef53a2a1b9e90abcf0))
+* readme.md ([c13c095](https://github.com/AnthonyLzq/typescript-project-generator/commit/c13c095b94c2499a1d6d3edd22439a4eb0493346))
+
 ## [6.1.0](https://github.com/AnthonyLzq/typescript-project-generator/compare/v6.0.0...v6.1.0) (2024-08-11)
 
 
