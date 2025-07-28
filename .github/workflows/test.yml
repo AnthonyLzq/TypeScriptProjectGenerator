@@ -24,12 +24,26 @@ jobs:
       - name: Revert changes into the package-lock.json file
         run: git checkout -- package-lock.json
 
-      - name: Run lint action
-        uses: wearerequired/lint-action@v2
+      - name: Run lint
+        run: npm run lint
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected after linting, preparing to commit..."
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes after linting, nothing to do, skipping commit"
+          fi
+
+      - name: Commit lint fixes
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
-          auto_fix: true
-          eslint: true
-          eslint_extensions: js
+          commit_message: 'feat: automated lint with biome'
+          file_pattern: '.'
 
   test:
     name: Testing TPG

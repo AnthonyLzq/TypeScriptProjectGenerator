@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   lint:
-    name: Run linters
+    name: Run lint
     runs-on: ubuntu-latest
 
     permissions:
@@ -27,8 +27,8 @@ jobs:
       - name: Revert changes into the pnpm-lock.yaml file
         run: git checkout -- pnpm-lock.yaml
 
-      - name: Run linters
-        run: pnpm lint
+      - name: Run lint
+        run: pnpm run lint
 
       - name: Check for changes
         id: verify-changed-files

@@ -177,7 +177,7 @@ describe('Testing TPG with Vitest Framework', () => {
 
     // Verify vitest config content
     const vitestConfigContent = readFileSync(
-      join(__dirname, '../example-vitest/vitest.config.ts'),
+      join(__dirname, '../example-vitest/vitest.config.mts'),
       'utf8'
     )
     expect(vitestConfigContent).toContain(
